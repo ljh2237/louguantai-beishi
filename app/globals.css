@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4ecd9;
+  color: #2c2416;
+  font-family: "Songti SC", "STSong", "SimSun", "FangSong", "STFangsong", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 自定义滚动条（古朴风格） */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ecd9;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8c6a2;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b08d4f;
+}
+
+/* 长碑文排版 */
+.prose-inscription {
+  line-height: 2;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .prose-inscription {
+    font-size: 1.125rem;
+  }
+}

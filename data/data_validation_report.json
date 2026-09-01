@@ -1,0 +1,25 @@
+{
+  "checkedTablets": 110,
+  "issueCount": 2,
+  "issues": [
+    {
+      "type": "duplicate_title",
+      "value": "佚名楼观题咏刻石",
+      "ids": [
+        49,
+        84
+      ]
+    },
+    {
+      "type": "duplicate_title",
+      "value": "重修说经台记",
+      "ids": [
+        62,
+        86
+      ]
+    }
+  ],
+  "byType": {
+    "duplicate_title": 2
+  }
+}

@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# python
+__pycache__/
+*.pyc
+scripts/_preview/
+scripts/_docx_dump.json
+
+# 本地下载的 npm 大体积 tarball（仅用于本地安装，不提交）
+local-packages/
+
+# 原始资料（不公开上传）
+../楼观台道教碑石.pdf
+../文本.docx
+楼观台道教碑石.pdf
+文本.docx

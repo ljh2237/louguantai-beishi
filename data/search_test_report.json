@@ -1,0 +1,16 @@
+{
+  "targets": {
+    "title": "大唐宗圣观记",
+    "dynasty": "清",
+    "word": "□□",
+    "wordCount": 583
+  },
+  "results": {
+    "碑名搜索": true,
+    "正文词搜索": true,
+    "朝代筛选": true,
+    "组合筛选(词+朝代)": true,
+    "组合筛选朝代一致": true
+  },
+  "allPassed": true
+}
