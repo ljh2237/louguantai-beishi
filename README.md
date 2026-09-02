@@ -118,21 +118,24 @@ python scripts/validate_data.py
 
 1. 浏览器读取 `public/data/tablets.json`
 2. 先本地全文检索碑刻资料，把相关碑刻的标题、简介、碑文摘录作为 context
-3. 将 context 发给 Qwen（阿里云百炼 OpenAI 兼容接口，模型 `qwen3.6-flash`）组织回答
+3. 将 context 发给大模型组织回答（Qwen `qwen3.6-flash`）
 4. system prompt 强制模型「只能根据提供的资料回答，不得编造资料中没有的历史信息」
 5. 若大模型接口调用失败（网络/跨域/超时），自动回退到纯本地知识库模式，不影响使用
 
-> ⚠️ 安全说明：本阶段为比赛演示，API Key 直接写在前端并会随公开仓库发布（已获授权）。
-> 正式上线时，应将 API Key 移到安全的后端代理服务，前端只调用代理。
+### 大模型接口架构
 
-### 大模型接口配置
+为避免 API Key 暴露在前端、并解决国内访问阿里云百炼的代理问题，采用 **Cloudflare Worker 后端代理**：
 
-接口信息位于 `lib/llm.ts`：
+```
+浏览器 → Cloudflare Worker（louguantai-beishi-proxy.workers.dev）
+       → 阿里云百炼（兼容 OpenAI 接口，qwen3.6-flash）
+```
 
-- baseUrl：`https://ws-ib6pqmfegl5pfe3s.cn-beijing.maas.aliyuncs.com/compatible-mode/v1`
-- model：`qwen3.6-flash`
+- Worker 代码位于 `cf-worker/`（独立于本仓库的 Next.js 项目）
+- Qwen API Key 只保存在 Worker 服务端，前端（`lib/llm.ts`）不包含任何密钥
+- 接口地址与模型配置见 `lib/llm.ts` 的 `LLM_CONFIG`
 
-如需更换模型或 Key，修改 `lib/llm.ts` 中的 `LLM_CONFIG` 即可。
+> 部署/更新 Worker：进入 `cf-worker/`，用 `wrangler deploy`（需 `CLOUDFLARE_API_TOKEN`）。
 
 ## 留言数据存在哪里
 
