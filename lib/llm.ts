@@ -1,17 +1,15 @@
-// 可选大模型模式：接入 Qwen（阿里云百炼 OpenAI 兼容接口）
+// 大模型模式：通过 Cloudflare Worker 后端代理调用 Qwen（阿里云百炼）
 //
-// ⚠️ 安全说明：本阶段为比赛演示，按项目要求直接在前端调用大模型，
-// 因此 API Key 会出现在前端源码与公开仓库中（已获授权）。
-// 生产环境应将密钥移到安全的后端代理服务，前端只调用代理。
+// 前端调用 Cloudflare Worker（海外服务，走用户代理可访问），
+// Worker 再转发到阿里云百炼。API Key 只保存在 Worker 服务端，前端不暴露。
 export interface ChatMessage {
   role: "system" | "user" | "assistant";
   content: string;
 }
 
 export const LLM_CONFIG = {
-  baseUrl: "https://ws-ib6pqmfegl5pfe3s.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
-  apiKey:
-    "sk-ws-H.EYMEMLE.xa8J.MEUCIHIBm21lxfZCyVG24X_hGLjxcKAYoeEosm-7RG5_u6suAiEAsglhtXJbGHlaY7u03rG3E4fYKw6dx3I19HME_RfIn-k",
+  // Cloudflare Worker 代理地址（Qwen API Key 在 Worker 端，不在此处）
+  baseUrl: "https://louguantai-beishi-proxy.jinghanliu2237.workers.dev",
   model: "qwen3.6-flash",
 };
 
@@ -19,16 +17,15 @@ export async function chatCompletion(
   messages: ChatMessage[],
   opts?: { temperature?: number; maxTokens?: number }
 ): Promise<string> {
-  // 20 秒超时，避免请求挂起导致界面一直「思考中」
+  // 30 秒超时（多一层 Worker 转发 + 模型生成，留足时间）
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
+  const timer = setTimeout(() => controller.abort(), 30000);
 
   try {
     const res = await fetch(`${LLM_CONFIG.baseUrl}/chat/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${LLM_CONFIG.apiKey}`,
       },
       body: JSON.stringify({
         model: LLM_CONFIG.model,
