@@ -128,33 +128,59 @@ export function answerQuestion(question: string, tablets: Tablet[]): AssistantRe
 // 先本地检索碑刻资料，把检索结果作为 context 发给大模型，
 // 禁止大模型凭自身知识编造历史信息。
 
+function formatTabletContext(t: Tablet): string {
+  let s = `《${t.title}》${t.dynasty ? `（${t.dynasty}）` : ""}\n`;
+  if (t.dateText) s += `年代：${t.dateText}\n`;
+  if (t.author) s += `撰文：${t.author}\n`;
+  if (t.calligrapher) s += `书写：${t.calligrapher}\n`;
+  if (t.engraver) s += `篆刻：${t.engraver}\n`;
+  if (t.introduction) s += `简介：${t.introduction}\n`;
+  const ft = t.inscription.fullText || "";
+  if (ft) s += `碑文摘录：${ft.slice(0, 900)}\n`;
+  return s;
+}
+
 export function buildRagContext(
   question: string,
   tablets: Tablet[]
 ): { context: string; related: Tablet[] } {
-  const results = searchTablets(question, [], tablets);
-  const top = results.slice(0, 6);
-  const related = top.map((r) => r.tablet);
-
-  let context = "";
-  for (const r of top) {
-    const t = r.tablet;
-    context += `《${t.title}》${t.dynasty ? `（${t.dynasty}）` : ""}\n`;
-    if (t.dateText) context += `年代：${t.dateText}\n`;
-    if (t.introduction) context += `简介：${t.introduction}\n`;
-    const ft = t.inscription.fullText || "";
-    if (ft) context += `碑文摘录：${ft.slice(0, 900)}\n`;
-    context += "\n";
+  // 1) 具体碑刻提问：直接用该碑资料作为 context
+  const target = findTargetTablet(question, tablets);
+  if (target) {
+    return { context: formatTabletContext(target), related: [target] };
   }
 
-  // 检索不到具体碑刻时，兜底提供碑名清单
-  if (!context) {
-    context =
-      "当前收录碑刻清单：\n" +
-      tablets.map((t) => `${t.title}${t.dynasty ? `（${t.dynasty}）` : ""}`).join("、") +
-      "\n";
+  // 2) 朝代筛选提问
+  const dynasty = detectDynasty(question);
+  if (dynasty && /有哪些|几个|几块|多少|碑刻|朝代/.test(question)) {
+    const matched = tablets.filter((t) => t.dynasty === dynasty);
+    const list = matched
+      .slice(0, 12)
+      .map((t) => `《${t.title}》${t.dateText ? `（${t.dateText}）` : ""}`)
+      .join("、");
+    const context = `「${dynasty}」碑刻共 ${matched.length} 块：${list}${matched.length > 12 ? " 等" : ""}`;
+    return { context, related: matched.slice(0, 12) };
   }
-  return { context, related };
+
+  // 3) 关键词全文检索（先剥离意图停用词）
+  const core = stripIntent(question);
+  if (core && core.length >= 2) {
+    const results = searchTablets(core, [], tablets);
+    const top = results.slice(0, 6);
+    if (top.length > 0) {
+      const context = top.map((r) => formatTabletContext(r.tablet)).join("\n");
+      return { context, related: top.map((r) => r.tablet) };
+    }
+  }
+
+  // 兜底：提供碑名清单，让模型至少知道收录范围
+  const context =
+    "当前收录碑刻清单：\n" +
+    tablets
+      .map((t) => `${t.title}${t.dynasty ? `（${t.dynasty}）` : ""}`)
+      .join("、") +
+    "\n（共 " + tablets.length + " 块）";
+  return { context, related: [] };
 }
 
 const SYSTEM_PROMPT =
