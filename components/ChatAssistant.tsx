@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Tablet } from "@/types/tablet";
-import { answerQuestion, AssistantReply } from "@/lib/assistant";
+import { answerQuestion, answerQuestionWithLLM, AssistantReply } from "@/lib/assistant";
 import { getBasePath } from "@/lib/base-path";
 
 interface ChatMessage {
@@ -40,23 +40,27 @@ export function ChatAssistant() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, loading]);
 
-  const send = () => {
+  const send = async () => {
     const q = input.trim();
     if (!q || loading) return;
     setInput("");
     setMessages((prev) => [...prev, { role: "user", text: q, related: [] }]);
     setLoading(true);
-    // 本地知识库问答（无 API KEY 依赖）
-    setTimeout(() => {
-      let reply: AssistantReply;
-      if (tablets) {
+
+    let reply: AssistantReply;
+    if (!tablets) {
+      reply = { text: "碑刻资料尚未加载完成，请稍候再试。", related: [] };
+    } else {
+      // 优先大模型增强（先本地检索，再把资料作为 context 发给 Qwen）
+      try {
+        reply = await answerQuestionWithLLM(q, tablets);
+      } catch {
+        // 大模型不可用时回退到本地知识库模式
         reply = answerQuestion(q, tablets);
-      } else {
-        reply = { text: "碑刻资料尚未加载完成，请稍候再试。", related: [] };
       }
-      setMessages((prev) => [...prev, { role: "assistant", text: reply.text, related: reply.related }]);
-      setLoading(false);
-    }, 150);
+    }
+    setMessages((prev) => [...prev, { role: "assistant", text: reply.text, related: reply.related }]);
+    setLoading(false);
   };
 
   const quickPrompts = [
@@ -86,7 +90,7 @@ export function ChatAssistant() {
           <div className="flex items-center justify-between border-b border-ink-200 bg-paper-100 px-4 py-3">
             <div>
               <h3 className="font-serif text-ink-800">智能碑刻助手</h3>
-              <p className="text-xs text-ink-400">基于本地碑刻资料库</p>
+              <p className="text-xs text-ink-400">本地资料 + 大模型增强</p>
             </div>
             <button onClick={() => setOpen(false)} className="text-ink-500 hover:text-ink-800" aria-label="关闭">
               ✕
@@ -140,7 +144,7 @@ export function ChatAssistant() {
               </div>
             ))}
 
-            {loading && <p className="text-sm text-ink-400">检索中……</p>}
+            {loading && <p className="text-sm text-ink-400">正在思考……</p>}
           </div>
 
           <div className="border-t border-ink-200 bg-paper-50 p-3">

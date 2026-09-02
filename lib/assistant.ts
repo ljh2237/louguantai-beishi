@@ -1,5 +1,6 @@
 import type { Tablet } from "@/types/tablet";
 import { searchTablets } from "@/lib/search";
+import { chatCompletion } from "@/lib/llm";
 
 export interface AssistantReply {
   text: string;
@@ -121,4 +122,56 @@ export function answerQuestion(question: string, tablets: Tablet[]): AssistantRe
   });
   const text = `根据本地碑刻资料，找到 ${results.length} 条相关结果，例如：\n${lines.join("\n")}`;
   return { text, related: top.map((r) => r.tablet) };
+}
+
+// ============ 大模型增强模式（RAG） ============
+// 先本地检索碑刻资料，把检索结果作为 context 发给大模型，
+// 禁止大模型凭自身知识编造历史信息。
+
+export function buildRagContext(
+  question: string,
+  tablets: Tablet[]
+): { context: string; related: Tablet[] } {
+  const results = searchTablets(question, [], tablets);
+  const top = results.slice(0, 6);
+  const related = top.map((r) => r.tablet);
+
+  let context = "";
+  for (const r of top) {
+    const t = r.tablet;
+    context += `《${t.title}》${t.dynasty ? `（${t.dynasty}）` : ""}\n`;
+    if (t.dateText) context += `年代：${t.dateText}\n`;
+    if (t.introduction) context += `简介：${t.introduction}\n`;
+    const ft = t.inscription.fullText || "";
+    if (ft) context += `碑文摘录：${ft.slice(0, 900)}\n`;
+    context += "\n";
+  }
+
+  // 检索不到具体碑刻时，兜底提供碑名清单
+  if (!context) {
+    context =
+      "当前收录碑刻清单：\n" +
+      tablets.map((t) => `${t.title}${t.dynasty ? `（${t.dynasty}）` : ""}`).join("、") +
+      "\n";
+  }
+  return { context, related };
+}
+
+const SYSTEM_PROMPT =
+  "你是「楼观台碑刻数字平台」的智能助手。你只能根据下面提供的楼观台碑刻资料回答用户问题。" +
+  "规则：1) 只能使用提供的资料，不得编造资料中没有的历史信息；" +
+  "2) 资料中没有的信息，必须明确说明「当前收录资料中没有找到相关信息」；" +
+  "3) 用简体中文，回答简洁、准确、有条理。";
+
+export async function answerQuestionWithLLM(
+  question: string,
+  tablets: Tablet[]
+): Promise<AssistantReply> {
+  const { context, related } = buildRagContext(question, tablets);
+  const user = `【楼观台碑刻资料】\n${context}\n【用户问题】\n${question}`;
+  const text = await chatCompletion([
+    { role: "system", content: SYSTEM_PROMPT },
+    { role: "user", content: user },
+  ]);
+  return { text: text || "（模型未返回内容，请重试）", related };
 }
