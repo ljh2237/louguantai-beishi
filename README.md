@@ -114,16 +114,25 @@ python scripts/validate_data.py
 
 ## 智能助手如何工作
 
-智能碑刻助手默认运行在**本地知识库模式**，完全无需 API KEY：
+智能碑刻助手采用「本地检索 + 大模型增强（RAG）」架构：
 
 1. 浏览器读取 `public/data/tablets.json`
-2. 解析用户问题意图（碑刻介绍 / 朝代筛选 / 人物检索 / 关键词检索）
-3. 从本地碑刻数据库检索并组织回答
-4. 若本地资料没有答案，明确回答「当前收录资料中没有找到足够信息」，不编造
+2. 先本地全文检索碑刻资料，把相关碑刻的标题、简介、碑文摘录作为 context
+3. 将 context 发给 Qwen（阿里云百炼 OpenAI 兼容接口，模型 `qwen3.6-flash`）组织回答
+4. system prompt 强制模型「只能根据提供的资料回答，不得编造资料中没有的历史信息」
+5. 若大模型接口调用失败（网络/跨域/超时），自动回退到纯本地知识库模式，不影响使用
 
-### 可选配置大模型
+> ⚠️ 安全说明：本阶段为比赛演示，API Key 直接写在前端并会随公开仓库发布（已获授权）。
+> 正式上线时，应将 API Key 移到安全的后端代理服务，前端只调用代理。
 
-本阶段 GitHub Pages 为纯静态部署，**不暴露任何 API KEY**。如需接入云端大模型，需额外部署安全的后端代理服务，再在前端调用该代理（不在本原型范围内）。
+### 大模型接口配置
+
+接口信息位于 `lib/llm.ts`：
+
+- baseUrl：`https://ws-ib6pqmfegl5pfe3s.cn-beijing.maas.aliyuncs.com/compatible-mode/v1`
+- model：`qwen3.6-flash`
+
+如需更换模型或 Key，修改 `lib/llm.ts` 中的 `LLM_CONFIG` 即可。
 
 ## 留言数据存在哪里
 
@@ -145,5 +154,5 @@ python scripts/validate_data.py
 - 碑刻资料为静态数据库（`public/data/tablets.json`）
 - 搜索为浏览器本地全文搜索
 - 留言使用 localStorage
-- 智能助手使用本地碑刻知识库
+- 智能助手使用本地碑刻知识库 + Qwen 大模型增强（RAG）
 - 本阶段未实现任何视频功能
