@@ -10,6 +10,7 @@ interface ChatMessage {
   role: "user" | "assistant";
   text: string;
   related: Tablet[];
+  mode?: "llm" | "local";
 }
 
 export function ChatAssistant() {
@@ -48,8 +49,10 @@ export function ChatAssistant() {
     setLoading(true);
 
     let reply: AssistantReply;
+    let mode: "llm" | "local" = "llm";
     if (!tablets) {
       reply = { text: "碑刻资料尚未加载完成，请稍候再试。", related: [] };
+      mode = "local";
     } else {
       // 优先大模型增强（先本地检索，再把资料作为 context 发给 Qwen）
       try {
@@ -57,9 +60,10 @@ export function ChatAssistant() {
       } catch {
         // 大模型不可用时回退到本地知识库模式
         reply = answerQuestion(q, tablets);
+        mode = "local";
       }
     }
-    setMessages((prev) => [...prev, { role: "assistant", text: reply.text, related: reply.related }]);
+    setMessages((prev) => [...prev, { role: "assistant", text: reply.text, related: reply.related, mode }]);
     setLoading(false);
   };
 
@@ -128,6 +132,11 @@ export function ChatAssistant() {
                 >
                   {m.text}
                 </div>
+                {m.mode === "local" && (
+                  <div className="mt-1 text-left text-[11px] text-ink-400">
+                    （大模型暂不可用，已用本地资料库回答）
+                  </div>
+                )}
                 {m.related.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-2">
                     {m.related.slice(0, 4).map((t) => (
