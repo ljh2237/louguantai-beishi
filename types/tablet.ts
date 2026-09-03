@@ -18,6 +18,14 @@ export interface Inscription {
   fullText: string;
 }
 
+export interface TabletVideo {
+  platform: "bilibili";
+  title: string;
+  bvid: string;
+  url: string;
+  embedUrl: string;
+}
+
 export interface Tablet {
   id: number;
   slug: string;
@@ -35,6 +43,7 @@ export interface Tablet {
   inscription: Inscription;
   images: TabletImage[];
   source: TabletSource;
+  video: TabletVideo | null;
   needsReview: boolean;
   reviewIssues: string[];
 }

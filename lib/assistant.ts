@@ -57,12 +57,41 @@ export function answerQuestion(question: string, tablets: Tablet[]): AssistantRe
     return { text: "请输入你想了解的问题，例如：“有哪些唐代碑刻？”或“介绍一下大唐宗圣观记”。", related: [] };
   }
 
+  // 0) 视频查询："哪些碑刻有视频？"
+  if (/有视频|有影像|视频|影像|B站|bilibili|哔哩哔哩/.test(q) && /哪些|哪几|几块|多少|所有|哪些碑刻/.test(q)) {
+    const withVideo = tablets.filter((t) => t.video);
+    if (withVideo.length === 0) {
+      return { text: "当前收录资料中暂未匹配到任何碑刻视频。", related: [] };
+    }
+    const names = withVideo.slice(0, 10).map((t) => `《${t.title}》`).join("、");
+    const more = withVideo.length > 10 ? ` 等共 ${withVideo.length} 块` : `，共 ${withVideo.length} 块`;
+    return {
+      text: `已收录碑刻影像的碑刻有${more}：${names}。可在对应详情页观看。`,
+      related: withVideo,
+    };
+  }
+
   // 1) 具体碑刻提问
   const target = findTargetTablet(q, tablets);
   if (target) {
+    const isVideoAsk = /有视频|有影像|视频|影像|B站|bilibili|哔哩哔哩/.test(q);
     const isDynastyAsk = /朝代|年代|什么朝|年份/.test(q);
     const isAuthorAsk = /谁写|谁书|谁撰|撰写|书写人|作者|何人/.test(q);
-    const isIntroAsk = /介绍|是什么|讲什么|内容|碑文|主要/.test(q) || (!isDynastyAsk && !isAuthorAsk);
+    const isIntroAsk = /介绍|是什么|讲什么|内容|碑文|主要/.test(q) || (!isDynastyAsk && !isAuthorAsk && !isVideoAsk);
+
+    // 视频单独优先回答
+    if (isVideoAsk) {
+      if (target.video) {
+        return {
+          text: `有，本平台已收录《${target.title}》的碑刻影像。可在详情页观看，或前往 B 站：${target.video.url}`,
+          related: [target],
+        };
+      }
+      return {
+        text: `《${target.title}》目前暂未匹配到碑刻影像。`,
+        related: [target],
+      };
+    }
 
     const parts: string[] = [];
     if (isIntroAsk) {

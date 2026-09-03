@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllTablets, getTabletBySlug } from "@/lib/tablets";
 import { ImageViewer } from "@/components/ImageViewer";
+import { BilibiliPlayer } from "@/components/BilibiliPlayer";
 import { DetailInscription } from "@/components/DetailInscription";
 
 export function generateStaticParams() {
@@ -101,6 +102,23 @@ export default function TabletDetailPage({ params }: { params: { slug: string } 
           <h2 className="mb-3 font-serif text-xl text-ink-800">碑刻图片</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <ImageViewer images={tablet.images} />
+          </div>
+        </section>
+      )}
+
+      {tablet.video && (
+        <section>
+          <h2 className="mb-3 font-serif text-xl text-ink-800">碑刻影像</h2>
+          <BilibiliPlayer bvid={tablet.video.bvid} />
+          <div className="mt-2 text-right">
+            <a
+              href={tablet.video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gold-600 underline underline-offset-2 hover:text-gold-500"
+            >
+              在哔哩哔哩观看 →
+            </a>
           </div>
         </section>
       )}

@@ -1092,5 +1092,33 @@
       "此为佚碑存目，原碑已佚，无存图"
     ],
     "needsReview": true
+  },
+  {
+    "type": "video_mapping",
+    "videoTitle": "刘至善碑",
+    "possibleTablet": "刘至善碑",
+    "confidence": 1.0,
+    "needsReview": true
+  },
+  {
+    "type": "video_mapping",
+    "videoTitle": "刘至善碑",
+    "possibleTablet": "刘至善碑",
+    "confidence": 0.9,
+    "needsReview": true
+  },
+  {
+    "type": "video_mapping",
+    "videoTitle": "佚名楼观题咏刻石",
+    "possibleTablet": "佚名楼观题咏刻石、佚名楼观题咏刻石",
+    "confidence": 0.8,
+    "needsReview": true
+  },
+  {
+    "type": "video_mapping",
+    "videoTitle": "刘至善碑",
+    "possibleTablet": "刘至善碑",
+    "confidence": 0.9,
+    "needsReview": true
   }
 ]

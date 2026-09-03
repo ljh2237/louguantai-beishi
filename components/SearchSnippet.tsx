@@ -25,6 +25,9 @@ export function SearchSnippet({
           {t.dynasty && (
             <span className="rounded bg-gold-400/30 px-2 py-0.5 text-ink-600">{t.dynasty}</span>
           )}
+          {t.video && (
+            <span className="rounded bg-ink-100 px-2 py-0.5 text-ink-500">▶ 有影像</span>
+          )}
           {result.matchCount > 0 && <span>{result.matchCount} 处匹配</span>}
         </div>
       </div>
