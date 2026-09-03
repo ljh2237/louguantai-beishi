@@ -35,14 +35,6 @@ export default function TabletDetailPage({ params }: { params: { slug: string } 
   if (tablet.otherPeople.length > 0)
     metaRows.push({ label: "其他人物", value: tablet.otherPeople.join("、") });
 
-  const sourceText = [
-    tablet.source.textFile,
-    tablet.source.pdfFile,
-    tablet.source.pdfPages.length ? `PDF 第 ${tablet.source.pdfPages.join("、")} 页` : null,
-  ]
-    .filter(Boolean)
-    .join(" · ");
-
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-start justify-between gap-2">
@@ -126,13 +118,6 @@ export default function TabletDetailPage({ params }: { params: { slug: string } 
       <section>
         <h2 className="mb-3 font-serif text-xl text-ink-800">碑文</h2>
         <DetailInscription tablet={tablet} />
-      </section>
-
-      <section className="border-t border-ink-200 pt-4 text-sm text-ink-400">
-        <p>资料来源：{sourceText || "文本.docx"}</p>
-        <p className="mt-1">
-          说明：本页内容为自动化整理结果，朝代、年代、撰文等字段可能需人工核对。
-        </p>
       </section>
     </div>
   );
