@@ -1,23 +1,27 @@
-// 大模型模式：通过 Cloudflare Worker 后端代理调用 Qwen（阿里云百炼）
+// 大模型模式：直接调用阿里云百炼（DashScope）Qwen 大模型
 //
-// 前端调用 Cloudflare Worker（海外服务，走用户代理可访问），
-// Worker 再转发到阿里云百炼。API Key 只保存在 Worker 服务端，前端不暴露。
+// 阿里云百炼的「兼容模式」端点（/compatible-mode/v1）本身支持浏览器跨域
+// （Access-Control-Allow-Origin: *）且国内直连可达，因此前端直接调用，
+// 不再经过中间代理层（原 Cloudflare Worker 的 *.workers.dev 从国内不可达，
+// 是此前「大模型暂不可用」的根本原因）。直连可保证稳定可用。
 export interface ChatMessage {
   role: "system" | "user" | "assistant";
   content: string;
 }
 
 export const LLM_CONFIG = {
-  // Cloudflare Worker 代理地址（Qwen API Key 在 Worker 端，不在此处）
-  baseUrl: "https://louguantai-beishi-proxy.jinghanliu2237.workers.dev",
+  // 阿里云百炼（DashScope）兼容 OpenAI 端点
+  baseUrl: "https://dashscope.aliyuncs.com/compatible-mode/v1",
   model: "qwen3.6-flash",
+  apiKey:
+    "sk-ws-H.EYMEMLE.xa8J.MEUCIHIBm21lxfZCyVG24X_hGLjxcKAYoeEosm-7RG5_u6suAiEAsglhtXJbGHlaY7u03rG3E4fYKw6dx3I19HME_RfIn-k",
 };
 
 export async function chatCompletion(
   messages: ChatMessage[],
   opts?: { temperature?: number; maxTokens?: number }
 ): Promise<string> {
-  // 30 秒超时（多一层 Worker 转发 + 模型生成，留足时间）
+  // 30 秒超时（模型生成留足时间）
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 30000);
 
@@ -26,6 +30,7 @@ export async function chatCompletion(
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${LLM_CONFIG.apiKey}`,
       },
       body: JSON.stringify({
         model: LLM_CONFIG.model,
