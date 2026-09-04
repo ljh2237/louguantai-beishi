@@ -27,13 +27,6 @@ export function SiteFooter() {
             碑石图库
           </Link>
         </nav>
-
-        <p className="mt-6 text-sm leading-relaxed text-ink-400">
-          楼观台碑刻数字化检索与智能导览平台 · 比赛初赛原型
-        </p>
-        <p className="mt-1 text-xs leading-relaxed text-ink-400">
-          碑刻资料来源于《楼观台道教碑石》与文本.docx，整理为结构化数据；部分信息待人工复核。
-        </p>
       </div>
     </footer>
   );
