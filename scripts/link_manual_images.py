@@ -101,10 +101,8 @@ def main():
                 })
             t["images"] = imgs
             # 人工核对过的图片，清除相关 review 提示
-            t["needsReview"] = any(
-                "图片" not in iss for iss in t.get("reviewIssues", [])
-            ) or t.get("needsReview", False)
             t["reviewIssues"] = [iss for iss in t.get("reviewIssues", []) if "图片与PDF页码" not in iss]
+            t["needsReview"] = len(t["reviewIssues"]) > 0
 
     with open(os.path.join(DATA, "tablets.json"), "w", encoding="utf-8") as f:
         json.dump(tablets, f, ensure_ascii=False, indent=2)

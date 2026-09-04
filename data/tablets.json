@@ -21,12 +21,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-002.jpg",
+        "path": "/tablets/manual/大唐宗圣观记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第2页）",
-        "sourcePdfPages": [
-          2
-        ]
+        "caption": "大唐宗圣观记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -36,10 +34,8 @@
         2
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "视频5：“大唐宗圣观记”",
@@ -70,12 +66,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-003.jpg",
+        "path": "/tablets/manual/大唐尹尊师碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第3页）",
-        "sourcePdfPages": [
-          3
-        ]
+        "caption": "大唐尹尊师碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -85,10 +79,8 @@
         3
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "视频6：“大唐尹尊师碑”",
@@ -119,12 +111,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-004.jpg",
+        "path": "/tablets/manual/老君显见碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第4页）",
-        "sourcePdfPages": [
-          4
-        ]
+        "caption": "老君显见碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -136,8 +126,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -169,12 +158,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-005.jpg",
+        "path": "/tablets/manual/玄元灵应颂.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第5页）",
-        "sourcePdfPages": [
-          5
-        ]
+        "caption": "玄元灵应颂",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -186,8 +173,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -213,12 +199,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-006.jpg",
+        "path": "/tablets/manual/楼观改名顺天兴国观牒刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第6页）",
-        "sourcePdfPages": [
-          6
-        ]
+        "caption": "楼观改名顺天兴国观牒刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -231,8 +215,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -258,12 +241,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-007.jpg",
+        "path": "/tablets/manual/苏轼楼观题记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第7页）",
-        "sourcePdfPages": [
-          7
-        ]
+        "caption": "苏轼楼观题记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -275,8 +256,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -308,12 +288,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-008.jpg",
+        "path": "/tablets/manual/薛绍彭书薛周留题楼观诗刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第8页）",
-        "sourcePdfPages": [
-          8
-        ]
+        "caption": "薛绍彭书薛周留题楼观诗刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -323,10 +301,8 @@
         8
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -351,12 +327,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-009.jpg",
+        "path": "/tablets/manual/薛绍彭书大中题楼观南楼诗刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第9页）",
-        "sourcePdfPages": [
-          9
-        ]
+        "caption": "薛绍彭书大中题楼观南楼诗刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -366,10 +340,8 @@
         9
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "薛绍彭书大中题楼观南楼诗刻石",
@@ -400,12 +372,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-010.jpg",
+        "path": "/tablets/manual/薛绍彭书王工部题楼观诗刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第10页）",
-        "sourcePdfPages": [
-          10
-        ]
+        "caption": "薛绍彭书王工部题楼观诗刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -415,10 +385,8 @@
         10
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "薛绍彭书王工部题楼观诗刻石",
@@ -449,12 +417,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-011.jpg",
+        "path": "/tablets/manual/奉圣旨给地公据碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第11页）",
-        "sourcePdfPages": [
-          11
-        ]
+        "caption": "奉圣旨给地公据碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -464,10 +430,8 @@
         11
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -492,12 +456,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-012.jpg",
+        "path": "/tablets/manual/大元重修古楼观宗圣宫记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第12页）",
-        "sourcePdfPages": [
-          12
-        ]
+        "caption": "大元重修古楼观宗圣宫记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -507,10 +469,8 @@
         12
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -535,12 +495,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-013.jpg",
+        "path": "/tablets/manual/终南山古楼观宗圣宫之图.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第13页）",
-        "sourcePdfPages": [
-          13
-        ]
+        "caption": "终南山古楼观宗圣宫之图",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -552,8 +510,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -579,12 +536,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-014.jpg",
+        "path": "/tablets/manual/同尘洪妙真人李尊师道行碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第14页）",
-        "sourcePdfPages": [
-          14
-        ]
+        "caption": "同尘洪妙真人李尊师道行碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -594,10 +549,8 @@
         14
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -622,12 +575,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-015.jpg",
+        "path": "/tablets/manual/终南山楼观宗圣宫提点成公先生墓志.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第15页）",
-        "sourcePdfPages": [
-          15
-        ]
+        "caption": "终南山楼观宗圣宫提点成公先生墓志",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -637,10 +588,8 @@
         15
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -665,12 +614,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-016.jpg",
+        "path": "/tablets/manual/终南山宗圣宫主石公道行记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第16页）",
-        "sourcePdfPages": [
-          16
-        ]
+        "caption": "终南山宗圣宫主石公道行记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -682,8 +629,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -715,12 +661,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-017.jpg",
+        "path": "/tablets/manual/篆书道德经碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第17页）",
-        "sourcePdfPages": [
-          17
-        ]
+        "caption": "篆书道德经碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -732,8 +676,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -759,12 +702,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-018.jpg",
+        "path": "/tablets/manual/正书道德经碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第18页）",
-        "sourcePdfPages": [
-          18
-        ]
+        "caption": "正书道德经碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -776,8 +717,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -803,12 +743,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-019.jpg",
+        "path": "/tablets/manual/楼观先师传碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第19页）",
-        "sourcePdfPages": [
-          19
-        ]
+        "caption": "楼观先师传碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -820,8 +758,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -847,12 +784,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-020.jpg",
+        "path": "/tablets/manual/古楼观系牛柏记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第20页）",
-        "sourcePdfPages": [
-          20
-        ]
+        "caption": "古楼观系牛柏记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -864,8 +799,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -891,12 +825,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-021.jpg",
+        "path": "/tablets/manual/大元尹宗师碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第21页）",
-        "sourcePdfPages": [
-          21
-        ]
+        "caption": "大元尹宗师碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -906,10 +838,8 @@
         21
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -934,12 +864,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-022.jpg",
+        "path": "/tablets/manual/建原始台玉清宫记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第22页）",
-        "sourcePdfPages": [
-          22
-        ]
+        "caption": "建原始台玉清宫记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -951,8 +879,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -978,12 +905,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-023.jpg",
+        "path": "/tablets/manual/重建会灵观记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第23页）",
-        "sourcePdfPages": [
-          23
-        ]
+        "caption": "重建会灵观记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -995,8 +920,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -1022,12 +946,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-024.jpg",
+        "path": "/tablets/manual/大元重建文始殿记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第24页）",
-        "sourcePdfPages": [
-          24
-        ]
+        "caption": "大元重建文始殿记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1037,10 +959,8 @@
         24
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1065,12 +985,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-025.jpg",
+        "path": "/tablets/manual/经台住持朱象先墓碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第25页）",
-        "sourcePdfPages": [
-          25
-        ]
+        "caption": "经台住持朱象先墓碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1082,8 +1000,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -1109,12 +1026,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-026.jpg",
+        "path": "/tablets/manual/楼观大宗圣宫重修说经台记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第26页）",
-        "sourcePdfPages": [
-          26
-        ]
+        "caption": "楼观大宗圣宫重修说经台记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1126,8 +1041,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -1153,12 +1067,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-027.jpg",
+        "path": "/tablets/manual/宗圣宫设五品级提点所公文碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第27页）",
-        "sourcePdfPages": [
-          27
-        ]
+        "caption": "宗圣宫设五品级提点所公文碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1171,8 +1083,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -1198,12 +1109,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-028.jpg",
+        "path": "/tablets/manual/楼观历受皇恩记碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第28页）",
-        "sourcePdfPages": [
-          28
-        ]
+        "caption": "楼观历受皇恩记碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1213,10 +1122,8 @@
         28
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1241,12 +1148,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-029.jpg",
+        "path": "/tablets/manual/二仙图刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第29页）",
-        "sourcePdfPages": [
-          29
-        ]
+        "caption": "二仙图刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1256,10 +1161,8 @@
         29
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "二仙图刻石",
@@ -1290,12 +1193,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-030.jpg",
+        "path": "/tablets/manual/溥光书文始之殿刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第30页）",
-        "sourcePdfPages": [
-          30
-        ]
+        "caption": "溥光书文始之殿刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1307,8 +1208,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -1334,12 +1234,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-031.jpg",
+        "path": "/tablets/manual/王正臣楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第31页）",
-        "sourcePdfPages": [
-          31
-        ]
+        "caption": "王正臣楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1351,8 +1249,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -1378,12 +1275,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-032.jpg",
+        "path": "/tablets/manual/吴琚书天下第一福地刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第32页）",
-        "sourcePdfPages": [
-          32
-        ]
+        "caption": "吴琚书天下第一福地刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1395,8 +1290,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": {
       "platform": "bilibili",
@@ -1428,12 +1322,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-033.jpg",
+        "path": "/tablets/manual/米芾书第一山刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第33页）",
-        "sourcePdfPages": [
-          33
-        ]
+        "caption": "米芾书第一山刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1445,8 +1337,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -1472,12 +1363,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-034.jpg",
+        "path": "/tablets/manual/赵孟頫书上善池刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第34页）",
-        "sourcePdfPages": [
-          34
-        ]
+        "caption": "赵孟頫书上善池刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1489,8 +1378,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": {
       "platform": "bilibili",
@@ -1522,12 +1410,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-035.jpg",
+        "path": "/tablets/manual/太上老君抱一说.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第35页）",
-        "sourcePdfPages": [
-          35
-        ]
+        "caption": "太上老君抱一说",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1537,10 +1423,8 @@
         35
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1565,12 +1449,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-036.jpg",
+        "path": "/tablets/manual/道教养生诀刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第36页）",
-        "sourcePdfPages": [
-          36
-        ]
+        "caption": "道教养生诀刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1580,10 +1462,8 @@
         36
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1608,12 +1488,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-037.jpg",
+        "path": "/tablets/manual/大明重建会灵观记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第37页）",
-        "sourcePdfPages": [
-          37
-        ]
+        "caption": "大明重建会灵观记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1623,10 +1501,8 @@
         37
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1651,12 +1527,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-038.jpg",
+        "path": "/tablets/manual/重修洪妙庵记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第38页）",
-        "sourcePdfPages": [
-          38
-        ]
+        "caption": "重修洪妙庵记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1666,10 +1540,8 @@
         38
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1694,12 +1566,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-039.jpg",
+        "path": "/tablets/manual/永寿王楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第39页）",
-        "sourcePdfPages": [
-          39
-        ]
+        "caption": "永寿王楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1709,10 +1579,8 @@
         39
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1737,12 +1605,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-040.jpg",
+        "path": "/tablets/manual/重修古楼观宗圣宫下院延生观记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第40页）",
-        "sourcePdfPages": [
-          40
-        ]
+        "caption": "重修古楼观宗圣宫下院延生观记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1752,10 +1618,8 @@
         40
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -1780,12 +1644,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-041.jpg",
+        "path": "/tablets/manual/浒西山人楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第41页）",
-        "sourcePdfPages": [
-          41
-        ]
+        "caption": "浒西山人楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1798,8 +1660,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -1831,12 +1692,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-042.jpg",
+        "path": "/tablets/manual/陈棐访说经台题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第42页）",
-        "sourcePdfPages": [
-          42
-        ]
+        "caption": "陈棐访说经台题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1848,8 +1707,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -1875,12 +1733,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-043.jpg",
+        "path": "/tablets/manual/重建五祖七真殿宇碑记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第43页）",
-        "sourcePdfPages": [
-          43
-        ]
+        "caption": "重建五祖七真殿宇碑记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1892,8 +1748,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -1919,12 +1774,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-044.jpg",
+        "path": "/tablets/manual/程轨题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第44页）",
-        "sourcePdfPages": [
-          44
-        ]
+        "caption": "程轨题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1936,8 +1789,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -1963,12 +1815,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-045.jpg",
+        "path": "/tablets/manual/宗圣宫铜章石兽铭.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第45页）",
-        "sourcePdfPages": [
-          45
-        ]
+        "caption": "宗圣宫铜章石兽铭",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -1980,8 +1830,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2007,12 +1856,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-046.jpg",
+        "path": "/tablets/manual/义记感格记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第46页）",
-        "sourcePdfPages": [
-          46
-        ]
+        "caption": "义记感格记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2024,8 +1871,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2051,12 +1897,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-047.jpg",
+        "path": "/tablets/manual/重建三清殿记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第47页）",
-        "sourcePdfPages": [
-          47
-        ]
+        "caption": "重建三清殿记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2068,8 +1912,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2095,12 +1938,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-048.jpg",
+        "path": "/tablets/manual/重建吾老洞殿宇记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第48页）",
-        "sourcePdfPages": [
-          48
-        ]
+        "caption": "重建吾老洞殿宇记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2112,8 +1953,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2139,12 +1979,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-049.jpg",
+        "path": "/tablets/manual/鹤洲楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第49页）",
-        "sourcePdfPages": [
-          49
-        ]
+        "caption": "鹤洲楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2156,8 +1994,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": {
       "platform": "bilibili",
@@ -2189,12 +2026,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-050.jpg",
+        "path": "/tablets/manual/49-佚名楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第50页）",
-        "sourcePdfPages": [
-          50
-        ]
+        "caption": "佚名楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2206,8 +2041,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -2233,12 +2067,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-051.jpg",
+        "path": "/tablets/manual/说经台创建救苦殿记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第51页）",
-        "sourcePdfPages": [
-          51
-        ]
+        "caption": "说经台创建救苦殿记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2250,8 +2082,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2277,12 +2108,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-052.jpg",
+        "path": "/tablets/manual/秦聚奎楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第52页）",
-        "sourcePdfPages": [
-          52
-        ]
+        "caption": "秦聚奎楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2294,8 +2123,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": {
       "platform": "bilibili",
@@ -2327,12 +2155,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-053.jpg",
+        "path": "/tablets/manual/补修纯阳洞碑记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第53页）",
-        "sourcePdfPages": [
-          53
-        ]
+        "caption": "补修纯阳洞碑记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2344,8 +2170,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2371,12 +2196,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-054.jpg",
+        "path": "/tablets/manual/显灵峰玄帝庙碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第54页）",
-        "sourcePdfPages": [
-          54
-        ]
+        "caption": "显灵峰玄帝庙碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2388,8 +2211,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2415,12 +2237,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-055.jpg",
+        "path": "/tablets/manual/万圣洞石匾.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第55页）",
-        "sourcePdfPages": [
-          55
-        ]
+        "caption": "万圣洞石匾",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2432,8 +2252,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -2459,12 +2278,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-056.jpg",
+        "path": "/tablets/manual/刘士龙终南山游记自序.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第56页）",
-        "sourcePdfPages": [
-          56
-        ]
+        "caption": "刘士龙终南山游记自序",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2476,8 +2293,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2503,12 +2319,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-057.jpg",
+        "path": "/tablets/manual/司理史公命建碑亭小记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第57页）",
-        "sourcePdfPages": [
-          57
-        ]
+        "caption": "司理史公命建碑亭小记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2520,8 +2334,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2547,12 +2360,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-058.jpg",
+        "path": "/tablets/manual/仰天池残碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第58页）",
-        "sourcePdfPages": [
-          58
-        ]
+        "caption": "仰天池残碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2565,8 +2376,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2592,12 +2402,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-059.jpg",
+        "path": "/tablets/manual/胡松游楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第59页）",
-        "sourcePdfPages": [
-          59
-        ]
+        "caption": "胡松游楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2609,8 +2417,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
@@ -2636,12 +2443,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-060.jpg",
+        "path": "/tablets/manual/吾老洞石匾.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第60页）",
-        "sourcePdfPages": [
-          60
-        ]
+        "caption": "吾老洞石匾",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2654,8 +2459,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2681,12 +2485,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-061.jpg",
+        "path": "/tablets/manual/云霞逸人传.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第61页）",
-        "sourcePdfPages": [
-          61
-        ]
+        "caption": "云霞逸人传",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2696,10 +2498,8 @@
         61
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
@@ -2724,12 +2524,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-062.jpg",
+        "path": "/tablets/manual/监院梁一亮任职公文刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第62页）",
-        "sourcePdfPages": [
-          62
-        ]
+        "caption": "监院梁一亮任职公文刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2741,8 +2539,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2768,12 +2565,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-063.jpg",
+        "path": "/tablets/manual/62-重修说经台记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第63页）",
-        "sourcePdfPages": [
-          63
-        ]
+        "caption": "重修说经台记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2785,8 +2580,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2812,12 +2606,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-064.jpg",
+        "path": "/tablets/manual/说经台重修记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第64页）",
-        "sourcePdfPages": [
-          64
-        ]
+        "caption": "说经台重修记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2829,8 +2621,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2856,12 +2647,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-065.jpg",
+        "path": "/tablets/manual/吾老洞四址山图刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第65页）",
-        "sourcePdfPages": [
-          65
-        ]
+        "caption": "吾老洞四址山图刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2874,8 +2663,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2901,12 +2689,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-066.jpg",
+        "path": "/tablets/manual/说经台梁公道行碑铭.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第66页）",
-        "sourcePdfPages": [
-          66
-        ]
+        "caption": "说经台梁公道行碑铭",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2918,8 +2704,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2945,12 +2730,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-067.jpg",
+        "path": "/tablets/manual/众善舍斋文序.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第67页）",
-        "sourcePdfPages": [
-          67
-        ]
+        "caption": "众善舍斋文序",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -2962,8 +2745,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -2989,12 +2771,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-068.jpg",
+        "path": "/tablets/manual/周至知县任张来泰住持吾老洞告示刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第68页）",
-        "sourcePdfPages": [
-          68
-        ]
+        "caption": "周至知县任张来泰住持吾老洞告示刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3006,8 +2786,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3039,12 +2818,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-069.jpg",
+        "path": "/tablets/manual/重建说经台记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第69页）",
-        "sourcePdfPages": [
-          69
-        ]
+        "caption": "重建说经台记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3056,8 +2833,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -3083,12 +2859,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-070.jpg",
+        "path": "/tablets/manual/老子墓残碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第70页）",
-        "sourcePdfPages": [
-          70
-        ]
+        "caption": "老子墓残碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3101,8 +2875,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -3128,12 +2901,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-071.jpg",
+        "path": "/tablets/manual/重修楼观碑记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第71页）",
-        "sourcePdfPages": [
-          71
-        ]
+        "caption": "重修楼观碑记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3145,8 +2916,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3178,12 +2948,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-072.jpg",
+        "path": "/tablets/manual/重修楼观台宗圣宫碑记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第72页）",
-        "sourcePdfPages": [
-          72
-        ]
+        "caption": "重修楼观台宗圣宫碑记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3195,8 +2963,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
@@ -3222,12 +2989,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-073.jpg",
+        "path": "/tablets/manual/重修楼观台记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第73页）",
-        "sourcePdfPages": [
-          73
-        ]
+        "caption": "重修楼观台记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3239,8 +3004,7 @@
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3272,12 +3036,10 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-074.jpg",
+        "path": "/tablets/manual/尹振麟说经台题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第74页）",
-        "sourcePdfPages": [
-          74
-        ]
+        "caption": "尹振麟说经台题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3290,8 +3052,7 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3319,16 +3080,14 @@
       "front": null,
       "back": null,
       "otherSections": [],
-      "fullText": "约清嘉庆十八年（1813）前后刻立。尹振麟题书。\n此刻石为长方形横式，宽0.85米、高0.45米。行书七言古诗一首。嵌于说经台盘旋路中途，字迹清晰，石面有划痕数条。书者尹振麟系清嘉庆十八年前后周至县知县，故推知此石为嘉庆十八年前后刻立。诗文如下：\n（印）瓜道人\n道人姓氏无常，年龄无定，住楼观者不知几何岁月矣，余见之尚如四十许，人不识不知，犹存怀葛之风。真人不露真相，其殆是欤。世俗不知，笑其憨呆，呼为瓜道人，口占以赠之。\n道人心似瓠无窍，说经台前葫卢笑。自言担水三十年，留守经台逢劫盗。（嘉庆七年教匪窜出南山，登台劫抢，羽士百余并皆逃匿，唯瓜道人独出应贼，贼不忍伤，经台由是得保全。）劫掠宝器及刍粮，剩有皮囊贼不要。抚陕秦公有太君，当年梦虎听讲经。虎复化人去汲绠，恍惚变幻疑仙灵。特饬星使寻梦境，蓦见道人苦零丁。载以东行赴节署，果然惟肖梦中形。烂熳天真人不识，貌似痴呆心自惺。自从道人一出山，山中谁可阐元关。戟门小驻厌尘嚣，云水闲身去复还。风霜阅尽几岁月，丰腴犹是旧容颜。而我也是懒残僧，煮石成饭愧未能。相逢道人话无始，五千义谛澈胸膺。何日投簪遂初赋，前身瓢笠记吾曾。\n竹陀尹振麟（印）\n*关尹喜墓碑\n清道光四年（1824）刻立。□元弼书。\n碑为圆首，身首一体。高1.5米、宽0.74米、厚0.14米。中隶书“周大夫关尹喜墓”七字。上款为“道光四年岁次甲申□月□□”，下款为“人□元弼书丹”、“经台□□□□题”、“合台道众等立石”。1968年楼观台文物管理所由西行村桥面拆回，今保存于宗圣宫遗址内。碑身已断为两节，座佚。"
+      "fullText": "约清嘉庆十八年（1813）前后刻立。尹振麟题书。\n此刻石为长方形横式，宽0.85米、高0.45米。行书七言古诗一首。嵌于说经台盘旋路中途，字迹清晰，石面有划痕数条。书者尹振麟系清嘉庆十八年前后周至县知县，故推知此石为嘉庆十八年前后刻立。诗文如下：\n（印）瓜道人\n道人姓氏无常，年龄无定，住楼观者不知几何岁月矣，余见之尚如四十许，人不识不知，犹存怀葛之风。真人不露真相，其殆是欤。世俗不知，笑其憨呆，呼为瓜道人，口占以赠之。\n道人心似瓠无窍，说经台前葫卢笑。自言担水三十年，留守经台逢劫盗。（嘉庆七年教匪窜出南山，登台劫抢，羽士百余并皆逃匿，唯瓜道人独出应贼，贼不忍伤，经台由是得保全。）劫掠宝器及刍粮，剩有皮囊贼不要。抚陕秦公有太君，当年梦虎听讲经。虎复化人去汲绠，恍惚变幻疑仙灵。特饬星使寻梦境，蓦见道人苦零丁。载以东行赴节署，果然惟肖梦中形。烂熳天真人不识，貌似痴呆心自惺。自从道人一出山，山中谁可阐元关。戟门小驻厌尘嚣，云水闲身去复还。风霜阅尽几岁月，丰腴犹是旧容颜。而我也是懒残僧，煮石成饭愧未能。相逢道人话无始，五千义谛澈胸膺。何日投簪遂初赋，前身瓢笠记吾曾。\n竹陀尹振麟（印）"
     },
     "images": [
       {
-        "path": "/tablets/pages/page-075.jpg",
+        "path": "/tablets/manual/尹振麟咏瓜道人诗刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第75页）",
-        "sourcePdfPages": [
-          75
-        ]
+        "caption": "尹振麟咏瓜道人诗刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
@@ -3341,13 +3100,54 @@
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
     "id": 75,
+    "slug": "guan-yin-xi-mu-bei",
+    "title": "关尹喜墓碑",
+    "alternativeTitles": [],
+    "category": "main",
+    "dynasty": "清",
+    "dateText": "清道光四年",
+    "location": null,
+    "author": null,
+    "calligrapher": null,
+    "engraver": null,
+    "otherPeople": [],
+    "introduction": "清道光四年（1824）刻立。□元弼书。",
+    "inscription": {
+      "front": null,
+      "back": null,
+      "otherSections": [],
+      "fullText": "清道光四年（1824）刻立。□元弼书。\n碑为圆首，身首一体。高1.5米、宽0.74米、厚0.14米。中隶书“周大夫关尹喜墓”七字。上款为“道光四年岁次甲申□月□□”，下款为“人□元弼书丹”、“经台□□□□题”、“合台道众等立石”。1968年楼观台文物管理所由西行村桥面拆回，今保存于宗圣宫遗址内。碑身已断为两节，座佚。"
+    },
+    "images": [
+      {
+        "path": "/tablets/manual/关尹喜墓碑.jpg",
+        "type": "rubbing",
+        "caption": "关尹喜墓碑",
+        "sourcePdfPages": []
+      }
+    ],
+    "source": {
+      "textFile": "文本.docx",
+      "pdfFile": "楼观台道教碑石.pdf",
+      "pdfPages": [
+        76
+      ]
+    },
+    "needsReview": true,
+    "reviewIssues": [
+      "标题含'*'前缀，可能为刻石类，需人工核对分类",
+      "朝代据年代文本开头推断，需人工核对"
+    ],
+    "video": null
+  },
+  {
+    "id": 76,
     "slug": "zhang-lai-tai-zhen-ren-mu-bei",
     "title": "张来泰真人墓碑",
     "alternativeTitles": [],
@@ -3368,31 +3168,28 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-076.jpg",
+        "path": "/tablets/manual/张来泰真人墓碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第76页）",
-        "sourcePdfPages": [
-          76
-        ]
+        "caption": "张来泰真人墓碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        76
+        77
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 76,
+    "id": 77,
     "slug": "he-cheng-xun-ti-kun-shan-lv-shi-yi-bo-ta-ke-shi",
     "title": "何承勋题昆山律师衣钵塔刻石",
     "alternativeTitles": [],
@@ -3413,31 +3210,28 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-077.jpg",
+        "path": "/tablets/manual/何承勋题昆山律师衣钵塔刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第77页）",
-        "sourcePdfPages": [
-          77
-        ]
+        "caption": "何承勋题昆山律师衣钵塔刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        77
+        78
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 77,
+    "id": 78,
     "slug": "long-men-zheng-zong-di-yi-shi-liu-dai-kun-shan-liu-he-lun-yi-bo-ta-ming",
     "title": "龙门正宗第一十六代昆山刘合仑衣钵塔铭",
     "alternativeTitles": [],
@@ -3458,30 +3252,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-078.jpg",
+        "path": "/tablets/manual/龙门正宗第一十六代昆山刘合仑衣钵塔铭.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第78页）",
-        "sourcePdfPages": [
-          78
-        ]
+        "caption": "龙门正宗第一十六代昆山刘合仑衣钵塔铭",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        78
+        79
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 78,
+    "id": 79,
     "slug": "xin-jian-lou-guan-tai-bei-ting-ji",
     "title": "新建楼观台碑亭记",
     "alternativeTitles": [],
@@ -3502,25 +3293,22 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-079.jpg",
+        "path": "/tablets/manual/新建楼观台碑亭记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第79页）",
-        "sourcePdfPages": [
-          79
-        ]
+        "caption": "新建楼观台碑亭记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        79
+        80
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3531,7 +3319,7 @@
     }
   },
   {
-    "id": 79,
+    "id": 80,
     "slug": "zhu-hai-xu-lv-shi-zeng-xiu-shuo-jing-tai-ji-bei",
     "title": "朱还虚律师增修说经台记碑",
     "alternativeTitles": [],
@@ -3552,31 +3340,28 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-080.jpg",
+        "path": "/tablets/manual/朱还虚律师增修说经台记碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第80页）",
-        "sourcePdfPages": [
-          80
-        ]
+        "caption": "朱还虚律师增修说经台记碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        80
+        81
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 80,
+    "id": 81,
     "slug": "chong-xu-zhen-ren-zhang-yuan-shun-mu-bei",
     "title": "冲虚真人张元顺墓碑",
     "alternativeTitles": [],
@@ -3597,31 +3382,28 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-081.jpg",
+        "path": "/tablets/manual/冲虚真人张元顺墓碑.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第81页）",
-        "sourcePdfPages": [
-          81
-        ]
+        "caption": "冲虚真人张元顺墓碑",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        81
+        82
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 81,
+    "id": 82,
     "slug": "huang-yun-jin-lou-guan-ti-yong-ke-shi",
     "title": "黄蕴锦楼观题咏刻石",
     "alternativeTitles": [],
@@ -3642,26 +3424,23 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-082.jpg",
+        "path": "/tablets/manual/黄蕴锦楼观题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第82页）",
-        "sourcePdfPages": [
-          82
-        ]
+        "caption": "黄蕴锦楼观题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        82
+        83
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3672,7 +3451,7 @@
     }
   },
   {
-    "id": 82,
+    "id": 83,
     "slug": "dong-tian-fu-di-si-zi-ke-shi",
     "title": "洞天福地四字刻石",
     "alternativeTitles": [],
@@ -3693,26 +3472,23 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-083.jpg",
+        "path": "/tablets/manual/洞天福地四字刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第83页）",
-        "sourcePdfPages": [
-          83
-        ]
+        "caption": "洞天福地四字刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        83
+        84
       ]
     },
     "needsReview": true,
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": {
       "platform": "bilibili",
@@ -3723,7 +3499,7 @@
     }
   },
   {
-    "id": 83,
+    "id": 84,
     "slug": "chong-xiu-zong-sheng-gong-zi-yun-lou-bing-shuo-jing-tai-bei-ji",
     "title": "重修宗圣宫紫云楼并说经台碑记",
     "alternativeTitles": [],
@@ -3744,30 +3520,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-084.jpg",
+        "path": "/tablets/manual/重修宗圣宫紫云楼并说经台碑记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第84页）",
-        "sourcePdfPages": [
-          84
-        ]
+        "caption": "重修宗圣宫紫云楼并说经台碑记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        84
+        85
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "朝代据年代文本开头推断，需人工核对",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "朝代据年代文本开头推断，需人工核对"
     ],
     "video": null
   },
   {
-    "id": 84,
+    "id": 85,
     "slug": "yi-ming-lou-guan-ti-yong-ke-shi-2",
     "title": "佚名楼观题咏刻石",
     "alternativeTitles": [],
@@ -3785,50 +3558,6 @@
       "back": null,
       "otherSections": [],
       "fullText": "约为清代题刻。\n刻石呈长方形横式，宽1米、高0.39米。文正书五言古诗一首。嵌于说经台东碑厅东墙上。字迹清楚，但左端残缺。其题咏如下：\n不入终南胜，焉知隐者情。白云如有约，凉雨喜相迎。地僻寒犹在，山深夏亦清。浮名多自误，空使羡躬耕。经从何处说，台向此间存。我欲参元理，谁堪与讨论。金丹化神灶，右柏失灵根。剩有楼居胜，□□□□□。（下缺）\n按：诗谓“我欲参元理”，“元理”当为“玄理”，疑清人避讳改“玄”为“元”。据此题咏似为清康熙以后所刻。"
-    },
-    "images": [
-      {
-        "path": "/tablets/pages/page-085.jpg",
-        "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第85页）",
-        "sourcePdfPages": [
-          85
-        ]
-      }
-    ],
-    "source": {
-      "textFile": "文本.docx",
-      "pdfFile": "楼观台道教碑石.pdf",
-      "pdfPages": [
-        85
-      ]
-    },
-    "needsReview": true,
-    "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
-    "video": null
-  },
-  {
-    "id": 85,
-    "slug": "liu-zhi-shan-bei",
-    "title": "刘至善碑",
-    "alternativeTitles": [],
-    "category": "main",
-    "dynasty": null,
-    "dateText": null,
-    "location": null,
-    "author": null,
-    "calligrapher": null,
-    "engraver": null,
-    "otherPeople": [],
-    "introduction": "中华民国二十四年（1935）十二月刻立。",
-    "inscription": {
-      "front": null,
-      "back": null,
-      "otherSections": [],
-      "fullText": "中华民国二十四年（1935）十二月刻立。\n此碑圆首方座，高1.35米、宽0.57米。额内正书“龙门”二字。碑文正书7行，行15字。嵌于说经台东碑厅东墙上。碑身完好，字迹清楚。文如下：\n师刘姓，讳至善，号若水，中州南阳人。性醇朴，幼业儒。年四十戴黄冠于诸葛庐，以弟子宗阳掌教关中，西游秦，时栖老子说经台，潜心默悟玄机，终日寂静寡言。宣统元年春，冥坐，翛然仙逝。民国廿四年嘉平月，镌石以志。\n清赐玉冠紫袍玉清至道徒李理然立"
     },
     "images": [
       {
@@ -3852,6 +3581,47 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
     ],
+    "video": null
+  },
+  {
+    "id": 86,
+    "slug": "liu-zhi-shan-bei",
+    "title": "刘至善碑",
+    "alternativeTitles": [],
+    "category": "main",
+    "dynasty": null,
+    "dateText": null,
+    "location": null,
+    "author": null,
+    "calligrapher": null,
+    "engraver": null,
+    "otherPeople": [],
+    "introduction": "中华民国二十四年（1935）十二月刻立。",
+    "inscription": {
+      "front": null,
+      "back": null,
+      "otherSections": [],
+      "fullText": "中华民国二十四年（1935）十二月刻立。\n此碑圆首方座，高1.35米、宽0.57米。额内正书“龙门”二字。碑文正书7行，行15字。嵌于说经台东碑厅东墙上。碑身完好，字迹清楚。文如下：\n师刘姓，讳至善，号若水，中州南阳人。性醇朴，幼业儒。年四十戴黄冠于诸葛庐，以弟子宗阳掌教关中，西游秦，时栖老子说经台，潜心默悟玄机，终日寂静寡言。宣统元年春，冥坐，翛然仙逝。民国廿四年嘉平月，镌石以志。\n清赐玉冠紫袍玉清至道徒李理然立"
+    },
+    "images": [
+      {
+        "path": "/tablets/manual/刘至善碑.jpg",
+        "type": "rubbing",
+        "caption": "刘至善碑",
+        "sourcePdfPages": []
+      }
+    ],
+    "source": {
+      "textFile": "文本.docx",
+      "pdfFile": "楼观台道教碑石.pdf",
+      "pdfPages": [
+        87
+      ]
+    },
+    "needsReview": true,
+    "reviewIssues": [
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
+    ],
     "video": {
       "platform": "bilibili",
       "title": "刘至善碑",
@@ -3861,7 +3631,7 @@
     }
   },
   {
-    "id": 86,
+    "id": 87,
     "slug": "chong-xiu-shuo-jing-tai-ji-2",
     "title": "重修说经台记",
     "alternativeTitles": [],
@@ -3882,25 +3652,21 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-087.jpg",
+        "path": "/tablets/manual/87-重修说经台记.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第87页）",
-        "sourcePdfPages": [
-          87
-        ]
+        "caption": "重修说经台记",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        87
+        88
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": {
       "platform": "bilibili",
       "title": "民国重修说经台记",
@@ -3910,7 +3676,7 @@
     }
   },
   {
-    "id": 87,
+    "id": 88,
     "slug": "ping-shan-shu-dao-de-er-zi-ke-shi",
     "title": "平山书道德二字刻石",
     "alternativeTitles": [],
@@ -3931,30 +3697,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-088.jpg",
+        "path": "/tablets/manual/平山书道德二字刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第88页）",
-        "sourcePdfPages": [
-          88
-        ]
+        "caption": "平山书道德二字刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        88
+        89
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
   {
-    "id": 88,
+    "id": 89,
     "slug": "zhong-nan-shan-gu-lou-guan-dao-zu-shuo-jing-tai-zhi-shan-tu",
     "title": "终南山古楼观道祖说经台之山图",
     "alternativeTitles": [],
@@ -3975,29 +3738,25 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-089.jpg",
+        "path": "/tablets/manual/终南山古楼观道祖说经台之山图.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第89页）",
-        "sourcePdfPages": [
-          89
-        ]
+        "caption": "终南山古楼观道祖说经台之山图",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        89
+        90
       ]
     },
-    "needsReview": true,
-    "reviewIssues": [
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
-    ],
+    "needsReview": false,
+    "reviewIssues": [],
     "video": null
   },
   {
-    "id": 89,
+    "id": 90,
     "slug": "wang-jia-shuo-jing-tai-ti-yong-ke-shi",
     "title": "王槚说经台题咏刻石",
     "alternativeTitles": [],
@@ -4018,30 +3777,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-090.jpg",
+        "path": "/tablets/manual/王槚说经台题咏刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第90页）",
-        "sourcePdfPages": [
-          90
-        ]
+        "caption": "王槚说经台题咏刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        90
+        91
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
   {
-    "id": 90,
+    "id": 91,
     "slug": "yi-bi-shou-zi-ke-shi",
     "title": "一笔寿字刻石",
     "alternativeTitles": [],
@@ -4062,30 +3818,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-091.jpg",
+        "path": "/tablets/manual/一笔寿字刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第91页）",
-        "sourcePdfPages": [
-          91
-        ]
+        "caption": "一笔寿字刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        91
+        92
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
   {
-    "id": 91,
+    "id": 92,
     "slug": "ding-dong-quan-ti-zi-ke-shi",
     "title": "丁东泉题字刻石",
     "alternativeTitles": [],
@@ -4106,30 +3859,27 @@
     },
     "images": [
       {
-        "path": "/tablets/pages/page-092.jpg",
+        "path": "/tablets/manual/丁东泉题字刻石.jpg",
         "type": "rubbing",
-        "caption": "《楼观台道教碑石》扫描图（第92页）",
-        "sourcePdfPages": [
-          92
-        ]
+        "caption": "丁东泉题字刻石",
+        "sourcePdfPages": []
       }
     ],
     "source": {
       "textFile": "文本.docx",
       "pdfFile": "楼观台道教碑石.pdf",
       "pdfPages": [
-        92
+        93
       ]
     },
     "needsReview": true,
     "reviewIssues": [
-      "标题含'*'前缀，可能为刻石类，需人工核对分类",
-      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+      "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
     "video": null
   },
   {
-    "id": 92,
+    "id": 93,
     "slug": "da-yuan-xi-shu-bei",
     "title": "大元玺书碑",
     "alternativeTitles": [],
@@ -4161,7 +3911,7 @@
     "video": null
   },
   {
-    "id": 93,
+    "id": 94,
     "slug": "chong-xiu-lv-gong-dong-ji-bei",
     "title": "重修吕公洞记碑",
     "alternativeTitles": [],
@@ -4194,7 +3944,7 @@
     "video": null
   },
   {
-    "id": 94,
+    "id": 95,
     "slug": "dong-hua-guan-xiu-jian-yu-huang-ge-ji-bei",
     "title": "东华观修建玉皇阁记碑",
     "alternativeTitles": [],
@@ -4227,7 +3977,7 @@
     "video": null
   },
   {
-    "id": 95,
+    "id": 96,
     "slug": "chong-xiu-wu-lao-dong-shang-yuan-ji-bei",
     "title": "重修吾老洞上院记碑",
     "alternativeTitles": [],
@@ -4260,7 +4010,7 @@
     "video": null
   },
   {
-    "id": 96,
+    "id": 97,
     "slug": "chong-xiu-lou-guan-ji-bei",
     "title": "重修楼观记碑",
     "alternativeTitles": [],
@@ -4293,7 +4043,7 @@
     "video": null
   },
   {
-    "id": 97,
+    "id": 98,
     "slug": "chong-xiu-wu-lao-dong-lao-jun-miao-bei",
     "title": "重修吾老洞老君庙碑",
     "alternativeTitles": [],
@@ -4326,7 +4076,7 @@
     "video": null
   },
   {
-    "id": 98,
+    "id": 99,
     "slug": "chong-xiu-zhu-xian-an-ji-bei",
     "title": "重修朱仙庵记碑",
     "alternativeTitles": [],
@@ -4359,7 +4109,7 @@
     "video": null
   },
   {
-    "id": 99,
+    "id": 100,
     "slug": "xin-kou-yu-feng-huang-shan-yu-huang-miao-bei",
     "title": "辛口峪凤凰山玉皇庙碑",
     "alternativeTitles": [],
@@ -4392,7 +4142,7 @@
     "video": null
   },
   {
-    "id": 100,
+    "id": 101,
     "slug": "tie-suo-qiao-bei",
     "title": "铁索桥碑",
     "alternativeTitles": [],
@@ -4425,7 +4175,7 @@
     "video": null
   },
   {
-    "id": 101,
+    "id": 102,
     "slug": "zhu-xian-an-gao-shi-bei",
     "title": "朱仙庵告示碑",
     "alternativeTitles": [],
@@ -4458,7 +4208,7 @@
     "video": null
   },
   {
-    "id": 102,
+    "id": 103,
     "slug": "you-chong-xiu-tie-suo-qiao-bei-ji",
     "title": "又重修铁索桥碑记",
     "alternativeTitles": [],
@@ -4490,7 +4240,7 @@
     "video": null
   },
   {
-    "id": 103,
+    "id": 104,
     "slug": "mu-jian-tian-yu-gang-gu-shui-ni-qiao-ji-bei",
     "title": "募建田峪钢骨水泥桥记碑",
     "alternativeTitles": [],
@@ -4522,7 +4272,7 @@
     "video": null
   },
   {
-    "id": 104,
+    "id": 105,
     "slug": "su-shi-shu-lou-guan-shi-ke-shi",
     "title": "苏轼书楼观诗刻石",
     "alternativeTitles": [],
@@ -4555,7 +4305,7 @@
     "video": null
   },
   {
-    "id": 105,
+    "id": 106,
     "slug": "zhao-meng-pin-yuan-shi-zi-zan-bei",
     "title": "赵孟频元十子赞碑",
     "alternativeTitles": [],
@@ -4588,7 +4338,7 @@
     "video": null
   },
   {
-    "id": 106,
+    "id": 107,
     "slug": "xi-sheng-tang-bei",
     "title": "希声堂碑",
     "alternativeTitles": [],
@@ -4621,7 +4371,7 @@
     "video": null
   },
   {
-    "id": 107,
+    "id": 108,
     "slug": "gu-lou-guan-kan-guan-yin-zi-hou-xu-bei",
     "title": "古楼观刊关尹子后序碑",
     "alternativeTitles": [],
@@ -4655,7 +4405,7 @@
     "video": null
   },
   {
-    "id": 108,
+    "id": 109,
     "slug": "lao-zi-du-guan-ming-bing-si-zi-zan-bei",
     "title": "老子渡关铭并四子赞碑",
     "alternativeTitles": [],
@@ -4689,7 +4439,7 @@
     "video": null
   },
   {
-    "id": 109,
+    "id": 110,
     "slug": "wen-xian-gu-chun-yang-dong-yan-hua-an-ji-bei",
     "title": "文仙谷纯阳洞演化庵记碑",
     "alternativeTitles": [],
@@ -4723,7 +4473,7 @@
     "video": null
   },
   {
-    "id": 110,
+    "id": 111,
     "slug": "yu-hua-guan-bing-xu-bei",
     "title": "玉华观并序碑",
     "alternativeTitles": [],

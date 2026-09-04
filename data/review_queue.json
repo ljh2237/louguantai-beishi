@@ -730,7 +730,7 @@
   },
   {
     "id": 75,
-    "title": "张来泰真人墓碑",
+    "title": "关尹喜墓碑",
     "category": "main",
     "issues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
@@ -741,7 +741,7 @@
   },
   {
     "id": 76,
-    "title": "何承勋题昆山律师衣钵塔刻石",
+    "title": "张来泰真人墓碑",
     "category": "main",
     "issues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
@@ -752,6 +752,17 @@
   },
   {
     "id": 77,
+    "title": "何承勋题昆山律师衣钵塔刻石",
+    "category": "main",
+    "issues": [
+      "标题含'*'前缀，可能为刻石类，需人工核对分类",
+      "朝代据年代文本开头推断，需人工核对",
+      "碑刻图片与PDF页码对应关系为按书页顺序的假设，需人工核对"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": 78,
     "title": "龙门正宗第一十六代昆山刘合仑衣钵塔铭",
     "category": "main",
     "issues": [
@@ -761,7 +772,7 @@
     "needsReview": true
   },
   {
-    "id": 78,
+    "id": 79,
     "title": "新建楼观台碑亭记",
     "category": "main",
     "issues": [
@@ -771,7 +782,7 @@
     "needsReview": true
   },
   {
-    "id": 79,
+    "id": 80,
     "title": "朱还虚律师增修说经台记碑",
     "category": "main",
     "issues": [
@@ -782,7 +793,7 @@
     "needsReview": true
   },
   {
-    "id": 80,
+    "id": 81,
     "title": "冲虚真人张元顺墓碑",
     "category": "main",
     "issues": [
@@ -793,7 +804,7 @@
     "needsReview": true
   },
   {
-    "id": 81,
+    "id": 82,
     "title": "黄蕴锦楼观题咏刻石",
     "category": "main",
     "issues": [
@@ -804,7 +815,7 @@
     "needsReview": true
   },
   {
-    "id": 82,
+    "id": 83,
     "title": "洞天福地四字刻石",
     "category": "main",
     "issues": [
@@ -815,7 +826,7 @@
     "needsReview": true
   },
   {
-    "id": 83,
+    "id": 84,
     "title": "重修宗圣宫紫云楼并说经台碑记",
     "category": "main",
     "issues": [
@@ -825,7 +836,7 @@
     "needsReview": true
   },
   {
-    "id": 84,
+    "id": 85,
     "title": "佚名楼观题咏刻石",
     "category": "main",
     "issues": [
@@ -835,7 +846,7 @@
     "needsReview": true
   },
   {
-    "id": 85,
+    "id": 86,
     "title": "刘至善碑",
     "category": "main",
     "issues": [
@@ -845,7 +856,7 @@
     "needsReview": true
   },
   {
-    "id": 86,
+    "id": 87,
     "title": "重修说经台记",
     "category": "main",
     "issues": [
@@ -854,7 +865,7 @@
     "needsReview": true
   },
   {
-    "id": 87,
+    "id": 88,
     "title": "平山书道德二字刻石",
     "category": "main",
     "issues": [
@@ -864,7 +875,7 @@
     "needsReview": true
   },
   {
-    "id": 88,
+    "id": 89,
     "title": "终南山古楼观道祖说经台之山图",
     "category": "main",
     "issues": [
@@ -873,7 +884,7 @@
     "needsReview": true
   },
   {
-    "id": 89,
+    "id": 90,
     "title": "王槚说经台题咏刻石",
     "category": "main",
     "issues": [
@@ -883,7 +894,7 @@
     "needsReview": true
   },
   {
-    "id": 90,
+    "id": 91,
     "title": "一笔寿字刻石",
     "category": "main",
     "issues": [
@@ -893,7 +904,7 @@
     "needsReview": true
   },
   {
-    "id": 91,
+    "id": 92,
     "title": "丁东泉题字刻石",
     "category": "main",
     "issues": [
@@ -903,7 +914,7 @@
     "needsReview": true
   },
   {
-    "id": 92,
+    "id": 93,
     "title": "大元玺书碑",
     "category": "佚碑存文",
     "issues": [
@@ -912,7 +923,7 @@
     "needsReview": true
   },
   {
-    "id": 93,
+    "id": 94,
     "title": "重修吕公洞记碑",
     "category": "佚碑存文",
     "issues": [
@@ -922,7 +933,7 @@
     "needsReview": true
   },
   {
-    "id": 94,
+    "id": 95,
     "title": "东华观修建玉皇阁记碑",
     "category": "佚碑存文",
     "issues": [
@@ -932,7 +943,7 @@
     "needsReview": true
   },
   {
-    "id": 95,
+    "id": 96,
     "title": "重修吾老洞上院记碑",
     "category": "佚碑存文",
     "issues": [
@@ -942,7 +953,7 @@
     "needsReview": true
   },
   {
-    "id": 96,
+    "id": 97,
     "title": "重修楼观记碑",
     "category": "佚碑存文",
     "issues": [
@@ -952,7 +963,7 @@
     "needsReview": true
   },
   {
-    "id": 97,
+    "id": 98,
     "title": "重修吾老洞老君庙碑",
     "category": "佚碑存文",
     "issues": [
@@ -962,7 +973,7 @@
     "needsReview": true
   },
   {
-    "id": 98,
+    "id": 99,
     "title": "重修朱仙庵记碑",
     "category": "佚碑存文",
     "issues": [
@@ -972,7 +983,7 @@
     "needsReview": true
   },
   {
-    "id": 99,
+    "id": 100,
     "title": "辛口峪凤凰山玉皇庙碑",
     "category": "佚碑存文",
     "issues": [
@@ -982,7 +993,7 @@
     "needsReview": true
   },
   {
-    "id": 100,
+    "id": 101,
     "title": "铁索桥碑",
     "category": "佚碑存文",
     "issues": [
@@ -992,7 +1003,7 @@
     "needsReview": true
   },
   {
-    "id": 101,
+    "id": 102,
     "title": "朱仙庵告示碑",
     "category": "佚碑存文",
     "issues": [
@@ -1002,7 +1013,7 @@
     "needsReview": true
   },
   {
-    "id": 102,
+    "id": 103,
     "title": "又重修铁索桥碑记",
     "category": "佚碑存文",
     "issues": [
@@ -1011,7 +1022,7 @@
     "needsReview": true
   },
   {
-    "id": 103,
+    "id": 104,
     "title": "募建田峪钢骨水泥桥记碑",
     "category": "佚碑存文",
     "issues": [
@@ -1020,7 +1031,7 @@
     "needsReview": true
   },
   {
-    "id": 104,
+    "id": 105,
     "title": "苏轼书楼观诗刻石",
     "category": "佚碑存目",
     "issues": [
@@ -1030,7 +1041,7 @@
     "needsReview": true
   },
   {
-    "id": 105,
+    "id": 106,
     "title": "赵孟频元十子赞碑",
     "category": "佚碑存目",
     "issues": [
@@ -1040,7 +1051,7 @@
     "needsReview": true
   },
   {
-    "id": 106,
+    "id": 107,
     "title": "希声堂碑",
     "category": "佚碑存目",
     "issues": [
@@ -1050,7 +1061,7 @@
     "needsReview": true
   },
   {
-    "id": 107,
+    "id": 108,
     "title": "古楼观刊关尹子后序碑",
     "category": "佚碑存目",
     "issues": [
@@ -1061,7 +1072,7 @@
     "needsReview": true
   },
   {
-    "id": 108,
+    "id": 109,
     "title": "老子渡关铭并四子赞碑",
     "category": "佚碑存目",
     "issues": [
@@ -1072,7 +1083,7 @@
     "needsReview": true
   },
   {
-    "id": 109,
+    "id": 110,
     "title": "文仙谷纯阳洞演化庵记碑",
     "category": "佚碑存目",
     "issues": [
@@ -1083,7 +1094,7 @@
     "needsReview": true
   },
   {
-    "id": 110,
+    "id": 111,
     "title": "玉华观并序碑",
     "category": "佚碑存目",
     "issues": [
@@ -1091,20 +1102,6 @@
       "朝代据年代文本开头推断，需人工核对",
       "此为佚碑存目，原碑已佚，无存图"
     ],
-    "needsReview": true
-  },
-  {
-    "type": "video_mapping",
-    "videoTitle": "刘至善碑",
-    "possibleTablet": "刘至善碑",
-    "confidence": 1.0,
-    "needsReview": true
-  },
-  {
-    "type": "video_mapping",
-    "videoTitle": "刘至善碑",
-    "possibleTablet": "刘至善碑",
-    "confidence": 0.9,
     "needsReview": true
   },
   {

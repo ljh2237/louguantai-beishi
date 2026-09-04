@@ -1361,7 +1361,7 @@
     "category": "main",
     "dynasty": "清",
     "dateText": "清嘉庆十八年",
-    "fullText": "约清嘉庆十八年（1813）前后刻立。尹振麟题书。\n此刻石为长方形横式，宽0.85米、高0.45米。行书七言古诗一首。嵌于说经台盘旋路中途，字迹清晰，石面有划痕数条。书者尹振麟系清嘉庆十八年前后周至县知县，故推知此石为嘉庆十八年前后刻立。诗文如下：\n（印）瓜道人\n道人姓氏无常，年龄无定，住楼观者不知几何岁月矣，余见之尚如四十许，人不识不知，犹存怀葛之风。真人不露真相，其殆是欤。世俗不知，笑其憨呆，呼为瓜道人，口占以赠之。\n道人心似瓠无窍，说经台前葫卢笑。自言担水三十年，留守经台逢劫盗。（嘉庆七年教匪窜出南山，登台劫抢，羽士百余并皆逃匿，唯瓜道人独出应贼，贼不忍伤，经台由是得保全。）劫掠宝器及刍粮，剩有皮囊贼不要。抚陕秦公有太君，当年梦虎听讲经。虎复化人去汲绠，恍惚变幻疑仙灵。特饬星使寻梦境，蓦见道人苦零丁。载以东行赴节署，果然惟肖梦中形。烂熳天真人不识，貌似痴呆心自惺。自从道人一出山，山中谁可阐元关。戟门小驻厌尘嚣，云水闲身去复还。风霜阅尽几岁月，丰腴犹是旧容颜。而我也是懒残僧，煮石成饭愧未能。相逢道人话无始，五千义谛澈胸膺。何日投簪遂初赋，前身瓢笠记吾曾。\n竹陀尹振麟（印）\n*关尹喜墓碑\n清道光四年（1824）刻立。□元弼书。\n碑为圆首，身首一体。高1.5米、宽0.74米、厚0.14米。中隶书“周大夫关尹喜墓”七字。上款为“道光四年岁次甲申□月□□”，下款为“人□元弼书丹”、“经台□□□□题”、“合台道众等立石”。1968年楼观台文物管理所由西行村桥面拆回，今保存于宗圣宫遗址内。碑身已断为两节，座佚。",
+    "fullText": "约清嘉庆十八年（1813）前后刻立。尹振麟题书。\n此刻石为长方形横式，宽0.85米、高0.45米。行书七言古诗一首。嵌于说经台盘旋路中途，字迹清晰，石面有划痕数条。书者尹振麟系清嘉庆十八年前后周至县知县，故推知此石为嘉庆十八年前后刻立。诗文如下：\n（印）瓜道人\n道人姓氏无常，年龄无定，住楼观者不知几何岁月矣，余见之尚如四十许，人不识不知，犹存怀葛之风。真人不露真相，其殆是欤。世俗不知，笑其憨呆，呼为瓜道人，口占以赠之。\n道人心似瓠无窍，说经台前葫卢笑。自言担水三十年，留守经台逢劫盗。（嘉庆七年教匪窜出南山，登台劫抢，羽士百余并皆逃匿，唯瓜道人独出应贼，贼不忍伤，经台由是得保全。）劫掠宝器及刍粮，剩有皮囊贼不要。抚陕秦公有太君，当年梦虎听讲经。虎复化人去汲绠，恍惚变幻疑仙灵。特饬星使寻梦境，蓦见道人苦零丁。载以东行赴节署，果然惟肖梦中形。烂熳天真人不识，貌似痴呆心自惺。自从道人一出山，山中谁可阐元关。戟门小驻厌尘嚣，云水闲身去复还。风霜阅尽几岁月，丰腴犹是旧容颜。而我也是懒残僧，煮石成饭愧未能。相逢道人话无始，五千义谛澈胸膺。何日投簪遂初赋，前身瓢笠记吾曾。\n竹陀尹振麟（印）",
     "source": {
       "textFile": "文本.docx",
       "paragraphStart": 1030
@@ -1373,6 +1373,26 @@
     ],
     "id": 74,
     "slug": "yin-zhen-lin-yong-gua-dao-ren-shi-ke-shi"
+  },
+  {
+    "title": "关尹喜墓碑",
+    "rawTitle": "*关尹喜墓碑",
+    "alternativeTitles": [],
+    "category": "main",
+    "dynasty": "清",
+    "dateText": "清道光四年",
+    "fullText": "清道光四年（1824）刻立。□元弼书。\n碑为圆首，身首一体。高1.5米、宽0.74米、厚0.14米。中隶书“周大夫关尹喜墓”七字。上款为“道光四年岁次甲申□月□□”，下款为“人□元弼书丹”、“经台□□□□题”、“合台道众等立石”。1968年楼观台文物管理所由西行村桥面拆回，今保存于宗圣宫遗址内。碑身已断为两节，座佚。",
+    "source": {
+      "textFile": "文本.docx",
+      "paragraphStart": 1037
+    },
+    "needsReview": true,
+    "reviewIssues": [
+      "标题含'*'前缀，可能为刻石类，需人工核对分类",
+      "朝代据年代文本开头推断，需人工核对"
+    ],
+    "id": 75,
+    "slug": "guan-yin-xi-mu-bei"
   },
   {
     "title": "张来泰真人墓碑",
@@ -1391,7 +1411,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 75,
+    "id": 76,
     "slug": "zhang-lai-tai-zhen-ren-mu-bei"
   },
   {
@@ -1411,7 +1431,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 76,
+    "id": 77,
     "slug": "he-cheng-xun-ti-kun-shan-lv-shi-yi-bo-ta-ke-shi"
   },
   {
@@ -1430,7 +1450,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 77,
+    "id": 78,
     "slug": "long-men-zheng-zong-di-yi-shi-liu-dai-kun-shan-liu-he-lun-yi-bo-ta-ming"
   },
   {
@@ -1449,7 +1469,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 78,
+    "id": 79,
     "slug": "xin-jian-lou-guan-tai-bei-ting-ji"
   },
   {
@@ -1469,7 +1489,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 79,
+    "id": 80,
     "slug": "zhu-hai-xu-lv-shi-zeng-xiu-shuo-jing-tai-ji-bei"
   },
   {
@@ -1489,7 +1509,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 80,
+    "id": 81,
     "slug": "chong-xu-zhen-ren-zhang-yuan-shun-mu-bei"
   },
   {
@@ -1509,7 +1529,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 81,
+    "id": 82,
     "slug": "huang-yun-jin-lou-guan-ti-yong-ke-shi"
   },
   {
@@ -1529,7 +1549,7 @@
       "标题含'*'前缀，可能为刻石类，需人工核对分类",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 82,
+    "id": 83,
     "slug": "dong-tian-fu-di-si-zi-ke-shi"
   },
   {
@@ -1548,7 +1568,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 83,
+    "id": 84,
     "slug": "chong-xiu-zong-sheng-gong-zi-yun-lou-bing-shuo-jing-tai-bei-ji"
   },
   {
@@ -1567,7 +1587,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 84,
+    "id": 85,
     "slug": "yi-ming-lou-guan-ti-yong-ke-shi-2"
   },
   {
@@ -1586,7 +1606,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 85,
+    "id": 86,
     "slug": "liu-zhi-shan-bei"
   },
   {
@@ -1603,7 +1623,7 @@
     },
     "needsReview": true,
     "reviewIssues": [],
-    "id": 86,
+    "id": 87,
     "slug": "chong-xiu-shuo-jing-tai-ji-2"
   },
   {
@@ -1622,7 +1642,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 87,
+    "id": 88,
     "slug": "ping-shan-shu-dao-de-er-zi-ke-shi"
   },
   {
@@ -1639,7 +1659,7 @@
     },
     "needsReview": true,
     "reviewIssues": [],
-    "id": 88,
+    "id": 89,
     "slug": "zhong-nan-shan-gu-lou-guan-dao-zu-shuo-jing-tai-zhi-shan-tu"
   },
   {
@@ -1658,7 +1678,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 89,
+    "id": 90,
     "slug": "wang-jia-shuo-jing-tai-ti-yong-ke-shi"
   },
   {
@@ -1677,7 +1697,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 90,
+    "id": 91,
     "slug": "yi-bi-shou-zi-ke-shi"
   },
   {
@@ -1696,7 +1716,7 @@
     "reviewIssues": [
       "标题含'*'前缀，可能为刻石类，需人工核对分类"
     ],
-    "id": 91,
+    "id": 92,
     "slug": "ding-dong-quan-ti-zi-ke-shi"
   },
   {
@@ -1713,7 +1733,7 @@
     },
     "needsReview": true,
     "reviewIssues": [],
-    "id": 92,
+    "id": 93,
     "slug": "da-yuan-xi-shu-bei"
   },
   {
@@ -1732,7 +1752,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 93,
+    "id": 94,
     "slug": "chong-xiu-lv-gong-dong-ji-bei"
   },
   {
@@ -1751,7 +1771,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 94,
+    "id": 95,
     "slug": "dong-hua-guan-xiu-jian-yu-huang-ge-ji-bei"
   },
   {
@@ -1770,7 +1790,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 95,
+    "id": 96,
     "slug": "chong-xiu-wu-lao-dong-shang-yuan-ji-bei"
   },
   {
@@ -1789,7 +1809,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 96,
+    "id": 97,
     "slug": "chong-xiu-lou-guan-ji-bei"
   },
   {
@@ -1808,7 +1828,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 97,
+    "id": 98,
     "slug": "chong-xiu-wu-lao-dong-lao-jun-miao-bei"
   },
   {
@@ -1827,7 +1847,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 98,
+    "id": 99,
     "slug": "chong-xiu-zhu-xian-an-ji-bei"
   },
   {
@@ -1846,7 +1866,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 99,
+    "id": 100,
     "slug": "xin-kou-yu-feng-huang-shan-yu-huang-miao-bei"
   },
   {
@@ -1865,7 +1885,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 100,
+    "id": 101,
     "slug": "tie-suo-qiao-bei"
   },
   {
@@ -1884,7 +1904,7 @@
     "reviewIssues": [
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 101,
+    "id": 102,
     "slug": "zhu-xian-an-gao-shi-bei"
   },
   {
@@ -1901,7 +1921,7 @@
     },
     "needsReview": true,
     "reviewIssues": [],
-    "id": 102,
+    "id": 103,
     "slug": "you-chong-xiu-tie-suo-qiao-bei-ji"
   },
   {
@@ -1918,7 +1938,7 @@
     },
     "needsReview": true,
     "reviewIssues": [],
-    "id": 103,
+    "id": 104,
     "slug": "mu-jian-tian-yu-gang-gu-shui-ni-qiao-ji-bei"
   },
   {
@@ -1937,7 +1957,7 @@
     "reviewIssues": [
       "佚碑存目，仅存目录信息"
     ],
-    "id": 104,
+    "id": 105,
     "slug": "su-shi-shu-lou-guan-shi-ke-shi"
   },
   {
@@ -1956,7 +1976,7 @@
     "reviewIssues": [
       "佚碑存目，仅存目录信息"
     ],
-    "id": 105,
+    "id": 106,
     "slug": "zhao-meng-pin-yuan-shi-zi-zan-bei"
   },
   {
@@ -1975,7 +1995,7 @@
     "reviewIssues": [
       "佚碑存目，仅存目录信息"
     ],
-    "id": 106,
+    "id": 107,
     "slug": "xi-sheng-tang-bei"
   },
   {
@@ -1995,7 +2015,7 @@
       "佚碑存目，仅存目录信息",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 107,
+    "id": 108,
     "slug": "gu-lou-guan-kan-guan-yin-zi-hou-xu-bei"
   },
   {
@@ -2015,7 +2035,7 @@
       "佚碑存目，仅存目录信息",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 108,
+    "id": 109,
     "slug": "lao-zi-du-guan-ming-bing-si-zi-zan-bei"
   },
   {
@@ -2035,7 +2055,7 @@
       "佚碑存目，仅存目录信息",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 109,
+    "id": 110,
     "slug": "wen-xian-gu-chun-yang-dong-yan-hua-an-ji-bei"
   },
   {
@@ -2055,7 +2075,7 @@
       "佚碑存目，仅存目录信息",
       "朝代据年代文本开头推断，需人工核对"
     ],
-    "id": 110,
+    "id": 111,
     "slug": "yu-hua-guan-bing-xu-bei"
   }
 ]

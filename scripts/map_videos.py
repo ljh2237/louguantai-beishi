@@ -41,21 +41,25 @@ MANUAL_MAP = {
     "老君显见碑": "老君显见碑",
 }
 
-# 手动映射到具体 id（同名碑需要用年代区分）
-MANUAL_ID_MAP = {
-    "民国重修说经台记": 86,  # 中华民国三十年，对应 id 86（id 62 是清雍正）
-}
+# 同名碑歧义：视频标题（清理后）→ 在候选碑中按内容选出正确的那块
+def match_minguo_shuojingtai(tablets):
+    """民国重修说经台记：introduction 或 dateText 含"民国"的那块《重修说经台记》。"""
+    for t in tablets:
+        if t["title"] == "重修说经台记":
+            blob = (t.get("introduction") or "") + (t.get("dateText") or "")
+            if "民国" in blob:
+                return t
+    return None
 
 
 def find_by_title(tablets, title):
     """按标题找碑，返回 (list of tablets, 匹配类型)。"""
     c = clean_title(title)
-    # 0) 手动 id 映射（精确）
-    if c in MANUAL_ID_MAP:
-        tid = MANUAL_ID_MAP[c]
-        for t in tablets:
-            if t["id"] == tid:
-                return [t], "manual_id"
+    # 0) 同名碑特殊歧义：民国重修说经台记（不再硬编码 id，避免 id 变动导致错配）
+    if "民国" in c and "重修说经台记" in c:
+        t = match_minguo_shuojingtai(tablets)
+        if t:
+            return [t], "manual_id"
     # 1) 完全一致（返回所有同名碑，供歧义检测）
     exact_matches = [t for t in tablets if t["title"] == c]
     if exact_matches:

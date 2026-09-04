@@ -75,7 +75,7 @@ def main():
         t = raw.strip()
         if not t:
             continue
-        if style.startswith("Heading 1"):
+        if style.startswith("Heading 1") or (style.startswith("Heading 2") and t.startswith("*")):
             if t == "附录一：佚碑存文":
                 flush(); section = "佚碑存文"; continue
             if t == "附录二：佚碑存目":
