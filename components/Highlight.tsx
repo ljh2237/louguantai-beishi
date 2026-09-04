@@ -2,7 +2,8 @@
 
 import { Fragment, type ReactNode } from "react";
 
-// 安全关键词高亮：React 默认转义，不使用 dangerouslySetInnerHTML
+// 安全关键词高亮：古籍批注风格（朱砂半透明底 + 朱砂深色 + 1px 底边）
+// 使用 React 默认转义，不使用 dangerouslySetInnerHTML
 export function Highlight({ text, query }: { text: string; query: string }) {
   if (!query || !text) return <>{text}</>;
   const q = query.toLowerCase();
@@ -14,7 +15,10 @@ export function Highlight({ text, query }: { text: string; query: string }) {
   while (idx !== -1) {
     if (idx > i) nodes.push(<Fragment key={k++}>{text.slice(i, idx)}</Fragment>);
     nodes.push(
-      <mark key={k++} className="bg-gold-400/40 text-ink-900 rounded-sm px-0.5">
+      <mark
+        key={k++}
+        className="rounded-[2px] border-b border-cinnabar/40 bg-cinnabar/10 px-[2px] text-cinnabar-dark"
+      >
         {text.slice(idx, idx + query.length)}
       </mark>
     );

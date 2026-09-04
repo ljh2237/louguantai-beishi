@@ -54,11 +54,9 @@ export function ChatAssistant() {
       reply = { text: "碑刻资料尚未加载完成，请稍候再试。", related: [] };
       mode = "local";
     } else {
-      // 优先大模型增强（先本地检索，再把资料作为 context 发给 Qwen）
       try {
         reply = await answerQuestionWithLLM(q, tablets);
       } catch {
-        // 大模型不可用时回退到本地知识库模式
         reply = answerQuestion(q, tablets);
         mode = "local";
       }
@@ -76,42 +74,53 @@ export function ChatAssistant() {
 
   return (
     <>
-      {/* 浮动按钮 */}
+      {/* 朱砂方形「问碑」印章按钮 */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-ink-700 text-paper-50 shadow-lg shadow-ink-900/30 transition hover:bg-ink-600"
+        className="fixed bottom-5 right-5 z-40 flex h-[52px] w-[52px] items-center justify-center rounded-sm bg-cinnabar text-paper-light shadow-lift transition-colors hover:bg-cinnabar-dark"
         aria-label="智能碑刻助手"
+        aria-expanded={open}
       >
         {open ? (
-          <span className="text-2xl leading-none">✕</span>
+          <span className="text-xl leading-none">✕</span>
         ) : (
-          <span className="text-xl font-serif">碑</span>
+          <span className="flex flex-col items-center font-serif text-base leading-tight">
+            <span>问</span>
+            <span>碑</span>
+          </span>
         )}
       </button>
 
       {open && (
-        <div className="fixed bottom-24 right-5 z-40 flex h-[70vh] max-h-[560px] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-lg border border-ink-300 bg-paper-50 shadow-2xl">
+        <div className="fixed bottom-[84px] right-5 z-40 flex h-[560px] max-h-[78vh] w-[min(400px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-md border border-ink-200 bg-paper-light shadow-lift">
           <div className="flex items-center justify-between border-b border-ink-200 bg-paper-100 px-4 py-3">
-            <div>
-              <h3 className="font-serif text-ink-800">智能碑刻助手</h3>
-              <p className="text-xs text-ink-400">本地资料 + 大模型增强</p>
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-cinnabar font-serif text-base text-paper-light">
+                问
+              </span>
+              <div className="leading-tight">
+                <h3 className="font-serif text-base text-ink-900">问碑</h3>
+                <p className="text-xs text-ink-400">楼观台碑刻智能检索助手</p>
+              </div>
             </div>
-            <button onClick={() => setOpen(false)} className="text-ink-500 hover:text-ink-800" aria-label="关闭">
+            <button
+              onClick={() => setOpen(false)}
+              className="rounded-sm px-2 py-1 text-ink-400 transition-colors hover:text-cinnabar-dark"
+              aria-label="关闭"
+            >
               ✕
             </button>
           </div>
 
-          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-3">
+          <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-4">
             {messages.length === 0 && (
               <div className="space-y-2">
                 <p className="text-sm text-ink-500">可以这样问我：</p>
                 {quickPrompts.map((p) => (
                   <button
                     key={p}
-                    onClick={() => {
-                      setInput(p);
-                    }}
-                    className="block w-full rounded-md border border-ink-200 bg-white px-3 py-2 text-left text-sm text-ink-600 hover:border-gold-500"
+                    onClick={() => setInput(p)}
+                    className="block w-full rounded-md border border-ink-200 bg-paper-100 px-3 py-2 text-left text-sm text-ink-600 transition-colors hover:border-cinnabar/40 hover:text-cinnabar-dark"
                   >
                     {p}
                   </button>
@@ -119,44 +128,46 @@ export function ChatAssistant() {
               </div>
             )}
 
-            {loadError && <p className="text-sm text-red-600">{loadError}</p>}
+            {loadError && <p className="text-sm text-cinnabar-dark">{loadError}</p>}
 
             {messages.map((m, i) => (
-              <div key={i} className={m.role === "user" ? "text-right" : "text-left"}>
-                <div
-                  className={`inline-block max-w-[85%] whitespace-pre-wrap rounded-lg px-3 py-2 text-left text-sm ${
-                    m.role === "user"
-                      ? "bg-ink-700 text-paper-50"
-                      : "bg-white border border-ink-200 text-ink-800"
-                  }`}
-                >
-                  {m.text}
+              <div key={i} className={m.role === "user" ? "flex justify-end" : "flex justify-start"}>
+                <div className="max-w-[85%]">
+                  <div
+                    className={`whitespace-pre-wrap rounded-md px-3 py-2 text-left text-sm leading-relaxed ${
+                      m.role === "user"
+                        ? "bg-ink-100 text-ink-800"
+                        : "border-l-2 border-cinnabar bg-paper-100 text-ink-800"
+                    }`}
+                  >
+                    {m.text}
+                  </div>
+                  {m.mode === "local" && (
+                    <div className="mt-1 text-left text-[11px] text-ink-400">
+                      （大模型暂不可用，已用本地资料库回答）
+                    </div>
+                  )}
+                  {m.related.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {m.related.slice(0, 4).map((t) => (
+                        <Link
+                          key={t.id}
+                          href={`/tablets/${t.slug}`}
+                          className="rounded-sm border border-cinnabar/30 px-2 py-0.5 text-xs text-cinnabar-dark transition-colors hover:bg-cinnabar/5"
+                        >
+                          《{t.title}》→
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                {m.mode === "local" && (
-                  <div className="mt-1 text-left text-[11px] text-ink-400">
-                    （大模型暂不可用，已用本地资料库回答）
-                  </div>
-                )}
-                {m.related.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {m.related.slice(0, 4).map((t) => (
-                      <Link
-                        key={t.id}
-                        href={`/tablets/${t.slug}`}
-                        className="rounded bg-gold-400/20 px-2 py-1 text-xs text-gold-600 hover:underline"
-                      >
-                        《{t.title}》→
-                      </Link>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
 
             {loading && <p className="text-sm text-ink-400">正在思考……</p>}
           </div>
 
-          <div className="border-t border-ink-200 bg-paper-50 p-3">
+          <div className="border-t border-ink-200 bg-paper-100 p-3">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -169,12 +180,12 @@ export function ChatAssistant() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="输入问题……"
-                className="flex-1 rounded-md border border-ink-300 bg-white px-3 py-2 text-sm text-ink-800 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="min-w-0 flex-1 rounded-md border border-ink-300 bg-paper-light px-3 py-2 text-sm text-ink-800 transition-colors focus:border-cinnabar focus:outline-none"
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="rounded-md bg-ink-700 px-4 py-2 text-sm text-paper-50 hover:bg-ink-600 disabled:opacity-50"
+                className="rounded-md bg-cinnabar px-4 py-2 text-sm text-paper-light transition-colors hover:bg-cinnabar-dark disabled:opacity-50"
               >
                 发送
               </button>

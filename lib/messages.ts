@@ -46,7 +46,7 @@ export function addMessage(
   content: string,
   parentId: string | null = null
 ): { ok: boolean; error?: string; message?: Message } {
-  const name = userName.trim().slice(0, MAX_NAME_LEN) || "匿名用户";
+  const name = userName.trim().slice(0, MAX_NAME_LEN) || "佚名";
   const body = content.trim();
   if (!body) return { ok: false, error: "留言内容不能为空" };
   if (body.length > MAX_CONTENT_LEN) {

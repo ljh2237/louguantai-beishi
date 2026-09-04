@@ -1,12 +1,15 @@
 "use client";
 
-// B 站视频播放器（iframe 嵌入，响应式 16:9，懒加载）
+// B 站视频播放器：极简细边框（iframe 嵌入，响应式 16:9，懒加载）
 export function BilibiliPlayer({ bvid }: { bvid: string }) {
   if (!bvid) return null;
   // B 站官方播放器 iframe，外部 URL 不经过 basePath
   const embedUrl = `https://player.bilibili.com/player.html?bvid=${bvid}&page=1&autoplay=0`;
   return (
-    <div className="relative w-full overflow-hidden rounded-md bg-ink-900" style={{ aspectRatio: "16 / 9" }}>
+    <div
+      className="relative w-full overflow-hidden rounded-md border border-ink-200 bg-ink-950"
+      style={{ aspectRatio: "16 / 9" }}
+    >
       <iframe
         src={embedUrl}
         title="哔哩哔哩播放器"

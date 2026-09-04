@@ -2,48 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   「纸上碑林 · 数字楼观」全局设计令牌
+   ============================================================ */
 :root {
-  color-scheme: light;
+  /* 宣纸 */
+  --paper: #f4efe4;
+  --paper-light: #fbf8f1;
+  --paper-deep: #e9e0cf;
+
+  /* 墨色 */
+  --ink: #25231f;
+  --ink-soft: #5e594f;
+  --ink-light: #8b857a;
+
+  /* 朱砂 */
+  --cinnabar: #a63d32;
+  --cinnabar-dark: #7d2d27;
+
+  /* 青铜 */
+  --bronze: #9a7b4f;
+  --bronze-light: #c2a36b;
+
+  /* 松黛 */
+  --pine: #35483b;
+
+  /* 边框 / 分隔线 */
+  --line: rgba(76, 64, 48, 0.18);
+  --line-strong: rgba(76, 64, 48, 0.32);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--paper);
+    /* 纯 CSS 宣纸纹理：细腻纤维 + 温润漫射光 */
+    background-image:
+      radial-gradient(ellipse 120% 60% at 18% -8%, rgba(255, 255, 255, 0.55), transparent 52%),
+      radial-gradient(ellipse 100% 70% at 85% 108%, rgba(154, 123, 79, 0.07), transparent 55%),
+      radial-gradient(ellipse 90% 80% at 50% 50%, rgba(154, 123, 79, 0.035), transparent 68%),
+      repeating-linear-gradient(
+        0deg,
+        rgba(76, 64, 48, 0.012) 0px,
+        rgba(76, 64, 48, 0.012) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: "Songti SC", "STSong", "SimSun", serif;
+    font-size: 18px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Songti SC", "STSong", "SimSun", serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    line-height: 1.35;
+  }
+
+  ::selection {
+    background-color: rgba(166, 61, 50, 0.16);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  /* 正文舒适字距，用于碑文等长文本 */
+  .prose-inscription {
+    line-height: 2.05;
+    font-size: 1.06rem;
+    letter-spacing: 0.04em;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--ink);
+  }
+
+  /* 小号说明文字：仿宋 / 楷体之外的辅助说明 */
+  .text-note {
+    font-family: "FangSong", "STFangsong", "FangSong_GB2312", serif;
+    color: var(--ink-soft);
+  }
+
+  /* 正文阅读区 */
+  .reading-column {
+    max-width: 50rem;
+  }
+}
+
+/* ============================================================
+   滚动条（克制的暖灰）
+   ============================================================ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(76, 64, 48, 0.28) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(76, 64, 48, 0.28);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(76, 64, 48, 0.45);
+}
+
+/* ============================================================
+   焦点可见性（无障碍）
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--cinnabar);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   动效：克制，150–350ms；尊重系统减弱动效设置
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: #f4ecd9;
-  color: #2c2416;
-  font-family: "Songti SC", "STSong", "SimSun", "FangSong", "STFangsong", serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 自定义滚动条（古朴风格） */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f4ecd9;
-}
-::-webkit-scrollbar-thumb {
-  background: #d8c6a2;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #b08d4f;
-}
-
-/* 长碑文排版 */
-.prose-inscription {
-  line-height: 2;
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  white-space: pre-wrap;
-  word-break: break-word;
-}
-
-@media (min-width: 768px) {
-  .prose-inscription {
-    font-size: 1.125rem;
-  }
 }

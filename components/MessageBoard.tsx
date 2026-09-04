@@ -25,14 +25,17 @@ function formatTime(iso: string): string {
   }
 }
 
+// 回复缩进最多到第 2 层，避免无限右缩
 function MessageItem({
   msg,
   all,
+  depth,
   onReply,
   onDelete,
 }: {
   msg: Message;
   all: Message[];
+  depth: number;
   onReply: (parentId: string) => void;
   onDelete: (id: string) => void;
 }) {
@@ -41,24 +44,38 @@ function MessageItem({
     .sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
 
   return (
-    <div className="rounded-md border border-ink-200 bg-white/70 p-3">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="text-sm font-medium text-ink-700">{msg.userName}</span>
-        <span className="text-xs text-ink-400">{formatTime(msg.createdAt)}</span>
+    <div>
+      <div className="rounded-md border border-ink-200 bg-paper-light p-4">
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="text-sm tracking-[0.05em] text-cinnabar-dark">{msg.userName}</span>
+          <span className="shrink-0 text-xs text-ink-400">{formatTime(msg.createdAt)}</span>
+        </div>
+        <p className="mt-2 whitespace-pre-wrap break-words leading-relaxed text-ink-700">
+          {msg.content}
+        </p>
+        <div className="mt-3 flex gap-4 border-t border-ink-100 pt-2 text-xs text-ink-400">
+          <button onClick={() => onReply(msg.id)} className="transition-colors hover:text-cinnabar-dark">
+            回复
+          </button>
+          <button onClick={() => onDelete(msg.id)} className="transition-colors hover:text-cinnabar-dark">
+            删除
+          </button>
+        </div>
       </div>
-      <p className="mt-1 whitespace-pre-wrap break-words text-ink-800">{msg.content}</p>
-      <div className="mt-2 flex gap-3 text-xs text-ink-400">
-        <button onClick={() => onReply(msg.id)} className="hover:text-gold-600">
-          回复
-        </button>
-        <button onClick={() => onDelete(msg.id)} className="hover:text-red-600">
-          删除
-        </button>
-      </div>
+
       {children.length > 0 && (
-        <div className="mt-3 ml-4 space-y-2 border-l-2 border-ink-200 pl-3">
+        <div
+          className={`mt-3 space-y-3 border-l border-ink-300 ${depth < 2 ? "ml-5 pl-4" : "ml-3 pl-2"}`}
+        >
           {children.map((c) => (
-            <MessageItem key={c.id} msg={c} all={all} onReply={onReply} onDelete={onDelete} />
+            <MessageItem
+              key={c.id}
+              msg={c}
+              all={all}
+              depth={depth + 1}
+              onReply={onReply}
+              onDelete={onDelete}
+            />
           ))}
         </div>
       )}
@@ -117,23 +134,32 @@ export function MessageBoard() {
   };
 
   return (
-    <div className="space-y-4">
-      <div className="rounded-md bg-gold-400/10 px-3 py-2 text-xs text-ink-500">
+    <div className="space-y-6">
+      <p className="text-note rounded-md border border-bronze/30 bg-bronze/10 px-4 py-2.5 text-sm text-ink-500">
         当前比赛演示版本的留言数据保存在本机浏览器中，仅供本地查看，不同设备之间不共享。
-      </div>
+      </p>
 
-      <form onSubmit={submit} className="space-y-2 rounded-lg border border-ink-200 bg-paper-50 p-4">
+      <form
+        onSubmit={submit}
+        className="space-y-3 rounded-md border border-ink-200 bg-paper-light p-4"
+      >
         {replyTarget && (
-          <div className="flex items-center justify-between rounded bg-ink-100 px-3 py-2 text-sm text-ink-600">
+          <div className="flex items-center justify-between rounded-sm bg-paper-deep px-3 py-2 text-sm text-ink-600">
             <span>
-              回复：<b>{replyTarget.userName}</b> — {replyTarget.content.slice(0, 30)}
+              回复：<b className="text-cinnabar-dark">{replyTarget.userName}</b> —{" "}
+              {replyTarget.content.slice(0, 30)}
               {replyTarget.content.length > 30 ? "…" : ""}
             </span>
-            <button type="button" onClick={() => setReplyingTo(null)} className="text-ink-400 hover:text-red-600">
+            <button
+              type="button"
+              onClick={() => setReplyingTo(null)}
+              className="text-ink-400 transition-colors hover:text-cinnabar-dark"
+            >
               取消
             </button>
           </div>
         )}
+
         <div className="flex flex-col gap-2 sm:flex-row">
           <input
             type="text"
@@ -141,7 +167,7 @@ export function MessageBoard() {
             onChange={(e) => setName(e.target.value)}
             placeholder={`姓名（可选，最多${MAX_NAME_LEN}字）`}
             maxLength={MAX_NAME_LEN}
-            className="sm:w-48 rounded-md border border-ink-300 bg-white px-3 py-2 text-ink-800 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="rounded-md border border-ink-300 bg-paper-100 px-3 py-2.5 text-ink-800 placeholder:text-ink-400 transition-colors focus:border-cinnabar focus:outline-none sm:w-48"
           />
           <textarea
             value={content}
@@ -149,32 +175,34 @@ export function MessageBoard() {
             placeholder="写下你的留言……"
             maxLength={MAX_CONTENT_LEN}
             rows={2}
-            className="flex-1 rounded-md border border-ink-300 bg-white px-3 py-2 text-ink-800 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="flex-1 resize-y rounded-md border border-ink-300 bg-paper-100 px-3 py-2.5 text-ink-800 placeholder:text-ink-400 transition-colors focus:border-cinnabar focus:outline-none"
           />
         </div>
+
         <div className="flex items-center justify-between">
           <span className="text-xs text-ink-400">
             {content.length}/{MAX_CONTENT_LEN}
           </span>
           <button
             type="submit"
-            className="rounded-md bg-ink-700 px-5 py-2 text-paper-50 hover:bg-ink-600 transition-colors"
+            className="rounded-md bg-cinnabar px-6 py-2 text-paper-light transition-colors hover:bg-cinnabar-dark"
           >
             发表留言
           </button>
         </div>
-        {error && <p className="text-sm text-red-600">{error}</p>}
+        {error && <p className="text-sm text-cinnabar-dark">{error}</p>}
       </form>
 
       {roots.length === 0 ? (
-        <p className="py-8 text-center text-ink-400">暂无留言，来发表第一条吧。</p>
+        <p className="py-12 text-center text-ink-400">暂无留言，来发表第一条吧。</p>
       ) : (
-        <div className="space-y-3">
+        <div className="space-y-4">
           {roots.map((m) => (
             <MessageItem
               key={m.id}
               msg={m}
               all={messages}
+              depth={0}
               onReply={(id) => setReplyingTo(id)}
               onDelete={handleDelete}
             />
@@ -186,7 +214,7 @@ export function MessageBoard() {
         <div className="text-right">
           <button
             onClick={handleClear}
-            className="text-xs text-ink-400 underline underline-offset-2 hover:text-red-600"
+            className="text-xs text-ink-400 underline underline-offset-4 transition-colors hover:text-cinnabar-dark"
           >
             清空本地留言
           </button>
