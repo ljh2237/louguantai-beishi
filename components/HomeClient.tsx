@@ -11,7 +11,6 @@ import { SearchBar } from "@/components/SearchBar";
 import { DynastyFilter } from "@/components/DynastyFilter";
 import { TabletCard } from "@/components/TabletCard";
 import { SearchSnippet } from "@/components/SearchSnippet";
-import { EnvironmentSection } from "@/components/EnvironmentSection";
 import { MessageBoard } from "@/components/MessageBoard";
 
 export function HomeClient({
@@ -107,9 +106,6 @@ export function HomeClient({
           )}
         </div>
       </section>
-
-      {/* 楼观印象 */}
-      <EnvironmentSection />
 
       {/* 留言互动 */}
       <section id="messages" className="scroll-mt-24">

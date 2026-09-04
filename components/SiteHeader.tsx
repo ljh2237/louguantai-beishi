@@ -4,7 +4,6 @@ const NAV = [
   { href: "/", label: "碑刻总览" },
   { href: "/search", label: "全文检索" },
   { href: "/videos", label: "碑刻影像" },
-  { href: "/#impressions", label: "楼观印象" },
 ];
 
 export function SiteHeader() {
