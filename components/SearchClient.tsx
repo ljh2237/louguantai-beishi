@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import type { Tablet } from "@/types/tablet";
 import { searchTablets } from "@/lib/search";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -30,9 +31,9 @@ function SearchBody({
   return (
     <div className="mx-auto max-w-shell space-y-8">
       <nav className="text-sm text-ink-400">
-        <a href="/" className="transition-colors hover:text-cinnabar-dark">
+        <Link href="/" className="transition-colors hover:text-cinnabar-dark">
           碑刻总览
-        </a>
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-ink-600">全文检索</span>
       </nav>
